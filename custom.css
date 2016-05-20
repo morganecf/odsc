@@ -1,0 +1,342 @@
+.scrollable {
+  bottom: 0px;
+  overflow-y: auto  !important;
+  overflow-x: hidden !important;
+}
+.chart {
+  height: 1000px;
+}
+
+.my-title {
+  font-size: 120px !important;
+}
+.my-header {
+  font-size: 70px !important;
+  font-weight: 800;
+}
+.my-header-2 {
+  font-size: 60px !important;
+  color: #D64541;
+  font-weight: 800;
+}
+
+.explanation {
+  font-size: 24px !important;
+  font-family: Georgia !important;
+}
+
+.num-title {
+  font-size: 1000px !important;
+  position: absolute !important;
+  color: #D64541 !important;
+  opacity: 0.4;
+}
+#title-6-viz {
+  margin-top: -260px;
+}
+#title-1-hist {
+  margin-top: -280px;
+}
+#histogram-title {
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+/* Histograms - BE view */
+
+#bird-eye-histogram {
+  margin-top: 50px;
+}
+#bird-eye-histogram .distribution-title {
+  font-size: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#bird-eye-histogram .axis path, #bird-eye-histogram .axis line {
+  fill: none;
+  stroke: #D2D7D3;
+  shape-rendering: crispEdges;
+}
+#bird-eye-histogram .axis .tick text {
+  font-size: 10px;
+}
+#bird-eye-histogram .bar {
+  fill: #D64541;
+}
+#bird-eye-histogram .hist-path {
+  fill: none;
+  stroke: #D64541;
+  stroke-width: 2;
+}
+#bird-eye-histogram .target-point {
+  fill: #2D8FE2;
+  stroke: #fff;
+  stroke-width: 1;
+}
+#bird-eye-histogram .tg-path {
+  fill: none;
+  stroke: #2D8FE2;
+  stroke-width: 1;
+}
+
+/* Histogram-target */
+#hist-target .axis path, #histogram .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#hist-target .axis .tick text {
+  font-size: 12px;
+}
+#hist-target .target-point {
+  fill: #FF5600;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#hist-target .tg-path {
+  stroke: #FF5600;
+  fill: none;
+  stroke-width: 2;
+}
+#hist-target .heart-bar {
+  fill: #D64541;
+}
+#hist-target .axis-label {
+  font-size: 14px;
+}
+
+/* Predicted vs. actual */
+#pred-act .axis path, #pred-act .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#pred-act .axis .tick text {
+  font-size: 12px;
+}
+#pred-act .pred-point {
+  fill: #2D8FE2;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#pred-act .act-point {
+  fill: #FF5600;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#pred-act .act-path {
+  fill: none;
+  stroke: #FF5600;
+  stroke-width: 2;
+}
+#pred-act .pred-path {
+  fill: none;
+  stroke-width: 2;
+  stroke: #2D8FE2;
+}
+#pred-act .bar {
+  fill: #D64541;
+}
+#pred-act .axis-label {
+  font-size: 14px;
+}
+
+/* Histogram */
+#histogram .axis path, #histogram .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#histogram .axis .tick text {
+  font-size: 12px;
+}
+#histogram .heart-bar {
+  fill: #D64541;
+}
+#histogram .heart-path {
+  fill: none;
+  stroke: #D64541;
+  stroke-width: 2;
+}
+#histogram .tg-path {
+  fill: none;
+  stroke: #F64747;
+  stroke-width: 2;
+}
+#histogram-stats {
+  margin-top: -60px;
+}
+
+/* Lift */
+#lift .axis path, #lift .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#lift .axis .tick text {
+  font-size: 12px;
+}
+#lift .act-point {
+  fill: #FF5600;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#lift .pred-point {
+  fill: #2D8FE2;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#lift .act-line {
+  stroke: #FF5600;
+  fill: none;
+  stroke-width: 2;
+}
+#lift .pred-line {
+  stroke: #2D8FE2;
+  fill: none;
+  stroke-width: 2;
+}
+#lift .lift-bar-background {
+  opacity: 0.15;
+  /*rx: 3;
+  ry: 3;*/
+}
+#lift .lift-bar {
+  /*rx: 3;
+  ry: 3;*/
+}
+#lift .lift-bar-pred {
+  fill: #2D8FE2;
+}
+#lift .lift-bar-act {
+  fill: #FF5600;
+}
+#lift .lift-dragger {
+  cursor: move;
+  opacity: 0.5;
+}
+#lift .lift-stat {
+  font-size: 12px;
+}
+#lift .axis-label {
+  font-size: 14px;
+}
+#lift .lift-explanation {
+  font-size: 20px;
+}
+
+#bin-select {
+  font-size: 18px;
+  margin-top: -30px;
+  margin-left: 450px;
+}
+
+/* Var importance */
+#var-imp2 .axis path, #lift .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#var-imp2 .axis .tick text {
+  font-size: 12px;
+}
+
+#var-imp2 .legend-old {
+  fill: #E87E04;
+}
+#var-imp2 .legend-new {
+  fill: #3FC380;
+}
+#var-imp2 .legend-text {
+  font-size: 12px;
+}
+
+#diagonalHatch-OG path {
+  stroke: #E87E04;
+}
+#diagonalHatch-new path {
+  stroke: #3FC380;
+}
+
+#original-prediction {
+  fill: url(#diagonalHatch-OG);
+  stroke: #E87E04;
+  stroke-width: 2;
+}
+#new-prediction {
+  fill: url(#diagonalHatch-new);
+  stroke: #3FC380;
+  stroke-width: 2;
+}
+
+#var-imp1 .feature-label {
+  font-size: 10px;
+}
+#var-imp3 .importance {
+  rx: 3;
+  ry: 3;
+}
+#var-imp3 .importance-background {
+  fill: #DADFE1;
+  rx: 3;
+  ry: 3;
+}
+#var-imp3 .importance-axis path, #var-imp3 .importance-axis line {
+  fill: none;
+  stroke: none;
+}
+#var-imp3 .importance-axis .tick text {
+  font-size: 12px;
+}
+#var-imp3 .importance-label {
+  font-size: 12px;
+}
+
+/* Partial dependence */
+#pd .axis path, #pd .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#pd .axis .tick text {
+  font-size: 12px;
+}
+#pd .bar {
+  fill: #D64541;
+}
+#pd .act-circle {
+  fill: #FF5600;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#pd .pred-circle {
+  fill: #2D8FE2;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#pd .pd-circle {
+  fill: #9A12B3;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#pd .axis-label {
+  font-size: 14px;
+}
+#pd #act-label {
+  fill: #FF5600;
+  stroke: none;
+}
+#pd #pred-label {
+  fill: #2D8FE2;
+  stroke: none;
+}
+#pd #pd-label {
+  fill: #9A12B3;
+  stroke: none;
+}
+#pd #feature-label {
+  font-size: 20px;
+}
+#pd .feature-tick-label {
+  font-size: 20px;
+}

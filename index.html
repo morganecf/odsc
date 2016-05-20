@@ -1,0 +1,450 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title -->
+        <section>
+          <h1 class="my-title num-title" id="title-6-viz">6</h1>
+          <h1 class="my-title">Visualizations</h1>
+          <p>that will help you build better predictive models</p>
+          <div class="sl-block" data-block-type="image" data-block-id="bcd0e8cb31b72285ea9e8b019c068ad5" style="min-width: 30px; min-height: 30px; width: 257.143px; height: 63px; left: 352px; top: 567px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="600" data-natural-height="147" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/511359/images/2629977/ODSC_logo_blue_no_gradient_cs6.png"></div></div>
+        </section>
+
+        <!-- Intro -->
+        <section>
+          <section>
+            <p class="my-header">dataviz@datarobot</p>
+            <div class="sl-block" data-block-type="image" data-block-id="694572c566192a342251b2fe8d82bfad" style="min-width: 30px; min-height: 30px; width: 365.161px; height: 361px; left: 109px; top: 181px;">
+              <div class="sl-block-content" style="z-index: 12;"><img data-natural-width="351" data-natural-height="347" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/511359/images/2626812/d3js-logo.png"></div>
+            </div>
+            <div class="sl-block" data-block-type="image" data-block-id="d4d42700e5bb1c241657e49d26e6372d" style="min-width: 30px; min-height: 30px; width: 302.038px; height: 398px; left: 560px; top: 162px;">
+              <div class="sl-block-content" style="z-index: 13;"><img data-natural-width="683" data-natural-height="900" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/511359/images/2626818/20151117_02.jpg"></div>
+            </div>
+          </section>
+          <section>
+            <p class="my-header">No more ugly plots!</p>
+            <div class="sl-block" data-block-type="image" data-block-id="763bdb04196480a23b3ee5d5a4308780" style="min-width: 30px; min-height: 30px; width: 690.9px; height: 470px; left: 143px; top: 149px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1323" data-natural-height="900" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/511359/images/2626905/Screen_Shot_2016-05-17_at_9.53.40_PM.png"></div></div>
+          </section>
+        </section>
+
+        <!-- Summary -->
+        <section>
+          <!-- Old paradigm -->
+          <section>
+            <p class="my-header">Old modeling paradigm</p>
+            <ul>
+              <li>Labor-intensive feature engineering</li>
+              <li>Train models</li>
+              <li>Validate and compare models</li>
+              <li>Interpret results</li>
+            </ul>
+          </section>
+          <!-- New paradigm -->
+          <section>
+            <p class="my-header">New modeling paradigm</p>
+            <ul>
+              <li>Some feature engineering</li>
+              <li><strong>Start training right away</strong></li>
+              <li>Validate and compare models</li>
+              <li>Use models and <strong>visualizations</strong> to prioritize features to investigate</li>
+              <li>Cycle back</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Example problem -->
+        <section>
+          <section>
+            <p class="my-header">A prediction problem</p>
+            <p class="my-header-2"><strong>Predicting romantic success</strong></p>
+          </section>
+          <!-- <section>
+            <p class="my-header">A prediction problem</p>
+            <p class="my-header-2"><strong>What is love???</strong></p>
+          </section> -->
+        </section>
+
+        <!-- Stanford study -->
+        <section>
+          <section>
+            <p class="my-header">"How couples meet and stay together"</p>
+            <ul>
+              <li>Stanford study</li>
+              <li>Surveyed 4000 respondents over the course of 6 years</li>
+              <li>Goal was to determine if how couples met had an impact on whether or not they stayed together</li>
+            </ul>
+          </section>
+          <section>
+            <p class="my-header">Survey variables</p>
+          </section>
+          <section>
+            <p class="my-header">How did they meet?</p>
+            <ul>
+              <li>At a bar or restaurant</li>
+              <li>Online</li>
+              <li>At a private party</li>
+              <li>Through a friend</li>
+              <li>At school</li>
+              <li>Through a family member</li>
+              <li>At work</li>
+            </ul>
+          </section>
+          <section>
+            <p class="my-header">Demographic attributes</p>
+            <ul>
+              <li>Age, gender, race, sexuality</li>
+              <li>Level of education </li>
+              <li>Religion, political affiliation</li>
+              <li>Income</li>
+              <li>Household size</li>
+            </ul>
+          </section>
+          <section>
+            <p class="my-header">Did they stay together...</p>
+            <ul>
+              <li>After two years?</li>
+              <li>After four years?</li>
+              <li>After six years (by the end of the study)?</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Reformulated problem -->
+        <section>
+          <section>
+            <p class="my-header">A (reformulated) prediction problem</p>
+            <p class="my-header-2"><strong>Predicting if a given respondent will stay in current relationship after two years</strong></p>
+          </section>
+          <section>
+            Can we leverage expertise knowledge?
+          </section>
+          <section>
+            <p class="my-header">Nero</p>
+          </section>
+          <section>
+            <p class="my-header">Buffy</p>
+          </section>
+          <section>
+            <p>What we've learned:</p>
+            <ul>
+              <li><strong>Do</strong> amass wild amounts of political power so that not dating you is literally illegal</li>
+              <li><strong>Don't</strong> date underworldly creatures constitutionally opposed to your existence</li>
+              <li>????</li>
+            </ul>
+          </section>
+          <section>
+            <p class="my_header">Data science!!</p>
+          </section>
+        </section>
+
+        <!-- 1-3 histogram, distribution vs. histogram, predicted vs. actual -->
+        <section>
+          <section>
+            <h1 class="my-title num-title" id="title-1-hist">1</h1>
+            <h1 class="my-title" id="histogram-title">Feature distribution</h1>
+          </section>
+          <section class="scrollable chart">
+            <h4 id="bird-eye-histogram-title">A sample of numeric features</h4>
+            <div id="bird-eye-histogram"></div>
+          </section>
+          <section class="chart">
+            <h4>Still-together rate (over current relationship length)</h4>
+            <div id="hist-target"></div>
+          </section>
+          <section>
+            <h1 class="my-title num-title" id="title-2-hist">2</h1>
+            <h1 class="my-title" id="histogram-2-title">Target vs. distribution</h1>
+          </section>
+          <section>
+            <p class="my-header">Target vs. distribution: recap</p>
+            <ul>
+              <li>Looking at relationship between target and features is most important pre-modeling step</li>
+              <li>Histogram provides context</li>
+            </ul>
+          </section>
+          <section>
+            <h1 class="my-title num-title" id="title-2-hist">3</h1>
+            <h1 class="my-title" id="histogram-3-title">Predicted vs. actual</h1>
+          </section>
+          <section class="chart">
+            <h4>Predicted vs. actual</h4>
+            <div id="pred-act"></div>
+          </section>
+          <section>
+            <p class="my-header">Buy this because:</p>
+            <ul>
+              <li>The AUC is 0.899!!!! </li>
+              <li>A visual check showed the model performing well across variables the counselor is familiar with.</li>
+            </ul>
+          </section>
+          <section>
+            <p class="my-header">Histogram: recap</p>
+            <ul>
+              <li>Data exploration</li>
+              <li>Detecting outliers</li>
+              <li>Underlayed: target, predicted vs. actual</li>
+              <li>
+                Provides context for other visualizations
+                <ul>
+                  <li>Target vs. distribution</li>
+                  <li>Predicted vs. actual</li>
+                </ul>
+              </li>
+              <li>Helps instill trust in user</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- MODEL EVALUATION: Lift chart -->
+        <section>
+          <section>
+            <h1 class="my-title num-title" id="title-4-lift">4</h1>
+            <h1 class="my-title" id="lift-title">Lift chart</h1>
+          </section>
+          <section>
+            <p>Measures overall model performance.</p>
+          </section>
+          <section class="chart">
+            <h4>Lift (Random Forest)</h4>
+            <div id="lift"></div>
+            <div id="bin-select">
+              <span>Number of bins:</span>
+              <span>
+                <select>
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                  <option value="30">30</option>
+                  <option value="60">60</option>
+                </select>
+              </span>
+            </div>
+          </section>
+          <section>
+            <p class="my-header">Lift chart: recap</p>
+            <ul>
+              <li>Look for fit between actual and predicted</li>
+              <li>Look for monotonicity of actual</li>
+              <li>Look for lift</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- FEATURE SELECTION: Partial dependence -->
+        <section>
+          <section>
+            <h1 class="my-title num-title" id="title-5-pd">5</h1>
+            <h1 class="my-title" id="lift-title">Partial dependence</h1>
+          </section>
+          <section>
+            <p>Plots the <i>marginal effect</i> of a predictor on the prediction.</p>
+          </section>
+          <section>
+            <p>Example: perceived relationship quality</p>
+          </section>
+          <section>
+            <p>1. Fix perceived relationship quality = poor</p>
+          </section>
+          <section class="chart">
+            <h4>Validation data: Random Forest</h4>
+            <div id="pd-matrix"></div>
+          </section>
+          <section>
+            <p>2. Take average prediction from fixed matrix</p>
+            <p class="explanation">PD(relationship_quality=poor) = avg(F(relationship_quality=poor, Xc))</p>
+          </section>
+          <section class="chart">
+            <h4>Perceived relationship quality</h4>
+            <div id="pd"></div>
+          </section>
+          <section>
+            <p class="my-header">Partial dependence: recap</p>
+            <ul>
+              <li>Shows relationship between predictor and prediction </li>
+              <li>Calculates marginal effect of a predictor by fixing it for each of its values</li>
+              <li>Does not take into account correlation with other variables</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Transition -->
+        <section>
+          <section>1000 variables</section>
+          <section>TODO: keep adding 0's (this is what 1000 looks like, by the way)</section>
+        </section>
+
+        <!-- UNDERSTANDING: Variable importances -->
+        <section>
+          <section>
+            <h1 class="my-title num-title" id="title-6-varimp">6</h1>
+            <h1 class="my-title" id="varimp-title">Variable importance</h1>
+          </section>
+          <section>
+            <p>Rank-orders variables by their influence on the target.</p>
+          </section>
+          <section>
+            <p>Example: calculate variable importance for parental_approval</p>
+          </section>
+          <section>
+            <p>1. Shuffle parental_approval column in validation data.</p>
+          </section>
+          <section class="chart">
+            <h4>Validation data: Random Forest</h4>
+            <div id="var-imp1"></div>
+          </section>
+          <section>
+            <p>2. Predict on shuffled validation data.</p>
+          </section>
+          <section class="chart">
+            <h4>Prediction distribution</h4>
+            <div id="var-imp2"></div>
+          </section>
+          <section>
+            <p>3.Calculate importances with new scores.</p>
+            <p class="explanation">Importance(parental_approval) = |Score(full_data) - Score(shuffled_data)|</p>
+          </section>
+          <section class="chart">
+            <h4>Importances</h4>
+            <div id="var-imp3"></div>
+          </section>
+          <section>
+            <p class="my-header">Variable importance: recap</p>
+            <ul>
+              <li>Provides insight into prediction problem</li>
+              <li>
+                Gives prioritization of features
+                <ul>
+                  <li>Improve feature engineering and modeling</li>
+                  <li>Reduce data collection costs</li>
+                </ul>
+              </li>
+              <li>Compare variable rankings across models</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Summary -->
+        <section>
+          <section>
+            <h1 class="my-title">Key takeaways</h1>
+          </section>
+          <section>
+            <ul>
+              <li>Histograms provide context</li>
+              <li>Lift chart shows overall model performance</li>
+              <li>Partial dependence shows marginal effect of predictor on predicted outcome</li>
+              <li>Predicted vs. actual shows relationship between predictor and predicted outcome, taking into account correlations</li>
+              <li>Variable importances provide a prioritization of features</li>
+              <li>Start modeling early!</li>
+              <li>Interactivity is exploratory, engaging, and fun</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Thank you -->
+        <section>
+          <h1 class="my-title">Thank you!</h1>
+          <h1 class="my-title num-title" id="smiley">:)</h1>
+        </section>
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/d3.min.js"></script>
+
+    <script src="js/data.js"></script>
+    <script src="js/data_with_target.js"></script>
+    <script src="js/mom_diff_data.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/most_imp_features.js"></script>
+    <script src="js/importance_data.js"></script>
+
+    <script src="js/histograms.js"></script>
+    <script src="js/histogram-target.js"></script>
+    <script src="js/predicted-actual.js"></script>
+    <script src="js/lift.js"></script>
+    <script src="js/var-imp.js"></script>
+    <script src="js/partial_dependence.js"></script>
+
+    <script>
+      var fnMap = {};
+
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+
+      Reveal.addEventListener('ready', function(event) {
+        console.log('ready:', event.currentSlide, event.indexh, event.indexv);
+      });
+
+      Reveal.addEventListener('slidechanged', function(event) {
+         console.log('change:', event.previousSlide, event.currentSlide, event.indexh, event.indexv);
+         if (event.indexh in fnMap && event.indexv > 0) fnMap[event.indexh]();
+
+         // Histogram
+         if (event.indexh === 6) {
+            if (event.indexv === 1) drawHistograms('#bird-eye-histogram');
+            else if (event.indexv === 2) histTarget();
+            else if (event.indexv === 4) predAct();
+         }
+
+         // Lift
+         if (event.indexh === 7 && event.indexv === 2) {
+            lift();
+         }
+
+         // Partial dependence
+         if (event.indexh === 8) {
+            if (event.indexv === 4) pdMatrix();
+            if (event.indexv === 6) partialDependence();
+         }
+
+         // Var imp
+         if (event.indexh == 10) {
+            if (event.indexv === 2) shuffleMatrix();
+            else if (event.indexv === 5) showDistributions();
+            else if (event.indexv === 8) showVarImp();
+         }
+      });
+
+    </script>
+  </body>
+</html>
