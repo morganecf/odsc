@@ -207,12 +207,12 @@ function showDistributions() {
     .attr('class', 'legend-text')
     .attr('x', 125)
     .attr('y', 530)
-    .text('Full model (ENET Blender)');
+    .text('Full model (Random Forest)');
   svg2.append('text')
     .attr('class', 'legend-text')
     .attr('x', 125)
     .attr('y', 550)
-    .text('Model with parental_approval shuffled (ENET Blender)');
+    .text('Model with parental_approval shuffled (Random Forest)');
 
 
   var fnStack = [showFirst, showSecond];
@@ -285,18 +285,18 @@ function showVarImp() {
     'relationship_quality',
     'age_ratio',
     'age_difference',
-    'education_count',
-    'religion16',
-    'education',
-    'religion',
+    'education_resp__education_part',
+    'religion16_resp__religion16_part',
+    'educationcat_resp__educationcat_part',
+    'religion_resp__religion_part',
     'education_mom_ratio',
     'education_ratio',
-    'party',
+    'party_resp__party_part',
     'education_mom_difference',
     'parental_approval',
     'same_college',
-    'race',
-    'gender',
+    'race_resp__race_part',
+    'gender_resp__gender_part',
     'coresident',
     'education_difference',
     'housesize_respondent',

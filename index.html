@@ -32,23 +32,33 @@
           <h1 class="my-title num-title" id="title-6-viz">6</h1>
           <h1 class="my-title">Visualizations</h1>
           <p>that will help you build better predictive models</p>
-          <div class="sl-block" data-block-type="image" data-block-id="bcd0e8cb31b72285ea9e8b019c068ad5" style="min-width: 30px; min-height: 30px; width: 257.143px; height: 63px; left: 352px; top: 567px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="600" data-natural-height="147" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/511359/images/2629977/ODSC_logo_blue_no_gradient_cs6.png"></div></div>
+          <div id="odsc-pic" class="sl-block" data-block-type="image" data-block-id="bcd0e8cb31b72285ea9e8b019c068ad5" style="min-width: 30px; min-height: 30px; width: 257.143px; height: 63px; left: 352px; top: 567px;">
+            <div class="sl-block-content" style="z-index: 14;"><img data-natural-width="600" data-natural-height="147" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/511359/images/2629977/ODSC_logo_blue_no_gradient_cs6.png"></div>
+          </div>
         </section>
 
         <!-- Intro -->
         <section>
           <section>
             <p class="my-header">dataviz@datarobot</p>
-            <div class="sl-block" data-block-type="image" data-block-id="694572c566192a342251b2fe8d82bfad" style="min-width: 30px; min-height: 30px; width: 365.161px; height: 361px; left: 109px; top: 181px;">
+            <img src="datarobot.png"/>
+            <!-- <div class="sl-block" data-block-type="image" data-block-id="694572c566192a342251b2fe8d82bfad" style="min-width: 30px; min-height: 30px; width: 365.161px; height: 361px; left: 109px; top: 181px;">
+              <div class="sl-block-content" style="z-index: 12;"><img data-natural-width="351" data-natural-height="347" style="" data-src="datarobot.png"></div>
+            </div> -->
+            <!-- <div class="sl-block" data-block-type="image" data-block-id="694572c566192a342251b2fe8d82bfad" style="min-width: 30px; min-height: 30px; width: 365.161px; height: 361px; left: 109px; top: 181px;">
               <div class="sl-block-content" style="z-index: 12;"><img data-natural-width="351" data-natural-height="347" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/511359/images/2626812/d3js-logo.png"></div>
             </div>
             <div class="sl-block" data-block-type="image" data-block-id="d4d42700e5bb1c241657e49d26e6372d" style="min-width: 30px; min-height: 30px; width: 302.038px; height: 398px; left: 560px; top: 162px;">
               <div class="sl-block-content" style="z-index: 13;"><img data-natural-width="683" data-natural-height="900" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/511359/images/2626818/20151117_02.jpg"></div>
-            </div>
+            </div> -->
           </section>
           <section>
-            <p class="my-header">No more ugly plots!</p>
-            <div class="sl-block" data-block-type="image" data-block-id="763bdb04196480a23b3ee5d5a4308780" style="min-width: 30px; min-height: 30px; width: 690.9px; height: 470px; left: 143px; top: 149px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1323" data-natural-height="900" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/511359/images/2626905/Screen_Shot_2016-05-17_at_9.53.40_PM.png"></div></div>
+            <p class="my-header">Sexy</p>
+            <div id="ugly-plot" class="sl-block" data-block-type="image" data-block-id="763bdb04196480a23b3ee5d5a4308780" style="min-width: 30px; min-height: 30px; width: 690.9px; height: 470px; left: 143px; top: 149px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1323" data-natural-height="900" style="" data-src="sexy.png"></div></div>
+          </section>
+          <section>
+            <p class="my-header">Ugly</p>
+            <div id="ugly-plot" class="sl-block" data-block-type="image" data-block-id="763bdb04196480a23b3ee5d5a4308780" style="min-width: 30px; min-height: 30px; width: 690.9px; height: 470px; left: 143px; top: 149px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1323" data-natural-height="900" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/511359/images/2626905/Screen_Shot_2016-05-17_at_9.53.40_PM.png"></div></div>
           </section>
         </section>
 
@@ -63,6 +73,9 @@
               <li>Validate and compare models</li>
               <li>Interpret results</li>
             </ul>
+            <aside class="notes">
+              Today I’m going to be talking about how visualizations can help your predictive modeling. And central to this is a rethinking of how we go about the modeling process. The so-called “old” way of doing things is that we spend a lot of time and energy on feature engineering, then once we have that all figured out we’ll build some models, validate them, and if they’re any good use them to make predictions. At DataRobot, and what I’ll be talking about here today, we really emphasize starting the model building process as early as possible, and using visualizations, to drive feature engineering….so the modeling pipeline becomes more of this cyclic, iterative process.
+            </aside>
           </section>
           <!-- New paradigm -->
           <section>
@@ -83,10 +96,10 @@
             <p class="my-header">A prediction problem</p>
             <p class="my-header-2"><strong>Predicting romantic success</strong></p>
           </section>
-          <!-- <section>
-            <p class="my-header">A prediction problem</p>
+          <section>
+            <p class="my-header-2"><strong>How to make love stay??</strong></p>
             <p class="my-header-2"><strong>What is love???</strong></p>
-          </section> -->
+          </section>
         </section>
 
         <!-- Stanford study -->
@@ -138,7 +151,10 @@
         <section>
           <section>
             <p class="my-header">A (reformulated) prediction problem</p>
-            <p class="my-header-2"><strong>Predicting if a given respondent will stay in current relationship after two years</strong></p>
+            <p class="my-header-2"><strong>Predicting if a given respondent will stay in their current relationship after two years</strong></p>
+            <aside class="notes">
+              Binary classification problem
+            </aside>
           </section>
           <section>
             Can we leverage expertise knowledge?
@@ -166,7 +182,7 @@
         <section>
           <section>
             <h1 class="my-title num-title" id="title-1-hist">1</h1>
-            <h1 class="my-title" id="histogram-title">Feature distribution</h1>
+            <h1 class="my-title" id="histogram-title">Histogram</h1>
           </section>
           <section class="scrollable chart">
             <h4 id="bird-eye-histogram-title">A sample of numeric features</h4>
@@ -259,7 +275,7 @@
         <section>
           <section>
             <h1 class="my-title num-title" id="title-5-pd">5</h1>
-            <h1 class="my-title" id="lift-title">Partial dependence</h1>
+            <h1 class="my-title" id="pd-title">Partial dependence</h1>
           </section>
           <section>
             <p>Plots the <i>marginal effect</i> of a predictor on the prediction.</p>
@@ -294,8 +310,9 @@
 
         <!-- Transition -->
         <section>
-          <section>1000 variables</section>
-          <section>TODO: keep adding 0's (this is what 1000 looks like, by the way)</section>
+          <section class="chart">
+            <div id="tons-of-variables"></div>
+          </section>
         </section>
 
         <!-- UNDERSTANDING: Variable importances -->
@@ -325,7 +342,7 @@
             <div id="var-imp2"></div>
           </section>
           <section>
-            <p>3.Calculate importances with new scores.</p>
+            <p>3. Calculate importances with new scores.</p>
             <p class="explanation">Importance(parental_approval) = |Score(full_data) - Score(shuffled_data)|</p>
           </section>
           <section class="chart">
@@ -354,6 +371,10 @@
             <h1 class="my-title">Key takeaways</h1>
           </section>
           <section>
+            <p class="my-header">How to have a successful relationship</p>
+            <p class="my-header-2"><strong>Already be in a successful relationship</strong></p>
+          </section>
+          <section>
             <ul>
               <li>Histograms provide context</li>
               <li>Lift chart shows overall model performance</li>
@@ -368,7 +389,7 @@
 
         <!-- Thank you -->
         <section>
-          <h1 class="my-title">Thank you!</h1>
+          <h1 class="my-title" id="thankyou">Thank you!</h1>
           <h1 class="my-title num-title" id="smiley">:)</h1>
         </section>
       </div>
@@ -435,6 +456,35 @@
          if (event.indexh === 8) {
             if (event.indexv === 4) pdMatrix();
             if (event.indexv === 6) partialDependence();
+         }
+
+         // 1000 variables
+         if (event.indexh === 9) {
+            $('#tons-of-variables').html('');
+            var n = 0;
+            var svg = d3.select('#tons-of-variables').append('svg').attr('height', 500).attr('width', 500);
+            var fdata = d3.range(1000);
+            var text = svg.append('text')
+              .attr('x', 70)
+              .attr('y', 250)
+              .attr('font-size', '60px')
+              .text('0 variables');
+            svg.selectAll('.f-data')
+              .data(fdata)
+              .enter()
+              .append('rect')
+              .attr('x', 0)
+              .attr('y', 0)
+              .attr('height', 0)
+              .attr('width', 0)
+              .transition()
+              .duration(2000)
+              .delay((d, i) => (i / 1000) * 2000)
+              .attr('x', 0)
+              .each('end', function(d, i) {
+                n += 1;
+                text.text(n + ' variables');
+              });
          }
 
          // Var imp
