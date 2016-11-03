@@ -1,0 +1,468 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title -->
+        <section>
+          <h1 class="my-title num-title" id="title-6-viz">5</h1>
+          <h1 class="my-title">Visualizations</h1>
+          <p>that will help you build better predictive models</p>
+          <div id="odsc-pic" class="sl-block" data-block-type="image" data-block-id="bcd0e8cb31b72285ea9e8b019c068ad5" style="min-width: 30px; min-height: 30px; width: 257.143px; height: 63px; left: 352px; top: 567px;">
+            <div class="sl-block-content" style="z-index: 14;"><img data-natural-width="600" data-natural-height="147" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/511359/images/2629977/ODSC_logo_blue_no_gradient_cs6.png"></div>
+          </div>
+        </section>
+
+        <!-- Intro -->
+        <section>
+          <section>
+            <p class="my-header">dataviz@datarobot</p>
+            <img src="datarobot.png"/>
+          </section>
+          <section>
+            <p class="my-header">Sexy</p>
+            <div id="ugly-plot" class="sl-block" data-block-type="image" data-block-id="763bdb04196480a23b3ee5d5a4308780" style="min-width: 30px; min-height: 30px; width: 690.9px; height: 470px; left: 143px; top: 149px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1323" data-natural-height="900" style="" data-src="sexy.png"></div></div>
+          </section>
+          <section>
+            <p class="my-header">Ugly</p>
+            <div id="ugly-plot" class="sl-block" data-block-type="image" data-block-id="763bdb04196480a23b3ee5d5a4308780" style="min-width: 30px; min-height: 30px; width: 690.9px; height: 470px; left: 143px; top: 149px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1323" data-natural-height="900" style="" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/511359/images/2626905/Screen_Shot_2016-05-17_at_9.53.40_PM.png"></div></div>
+          </section>
+        </section>
+
+        <!-- Summary -->
+        <section>
+          <!-- Old paradigm -->
+          <section>
+            <p class="my-header">Old modeling paradigm</p>
+            <ul>
+              <li>Labor-intensive feature engineering</li>
+              <li>Train models</li>
+              <li>Validate and compare models</li>
+              <li>Interpret results</li>
+            </ul>
+            <aside class="notes">
+              Today I’m going to be talking about how visualizations can help your predictive modeling. And central to this is a rethinking of how we go about the modeling process. The so-called “old” way of doing things is that we spend a lot of time and energy on feature engineering, then once we have that all figured out we’ll build some models, validate them, and if they’re any good use them to make predictions. At DataRobot, and what I’ll be talking about here today, we really emphasize starting the model building process as early as possible, and using visualizations, to drive feature engineering….so the modeling pipeline becomes more of this cyclic, iterative process.
+            </aside>
+          </section>
+          <!-- New paradigm -->
+          <section>
+            <p class="my-header">New modeling paradigm</p>
+            <ul>
+              <li>Some feature engineering</li>
+              <li><strong>Start training right away</strong></li>
+              <li>Validate and compare models</li>
+              <li>Use models and <strong>visualizations</strong> to prioritize features to investigate</li>
+              <li>Cycle back</li>
+            </ul>
+          </section>
+          <section>
+            <p class="my-header">Disclosure</p>
+            <p>Already gave similar talk at ODSC Boston</p>
+          </section>
+        </section>
+
+        <!-- Example problem -->
+        <section>
+          <section>
+            <p class="my-header">A prediction problem</p>
+            <p class="my-header-2"><strong>Predicting likes on election memes</strong></p>
+          </section>
+          <section>
+            <p>Tons of memes popping up</p>
+            <p>Cite kaggle</p>
+            <p>meme economy screenshot</p>
+          </section>
+          <section>
+            <p>What is a meme?</p>
+            <ul>
+              <li>A</li>
+              <li>B</li>
+              <li>C</li>
+            </ul>
+          </section>
+          <section>
+            <p>Examples of memes</p>
+            <ul>
+              <li>A</li>
+              <li>B</li>
+              <li>C</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Go over data -->
+        <section>
+          <section>
+            <p class="my-header">The Data</p>
+            <p>13.k Donald Trump and Hillary Clinton memes</p>
+            <ul>
+              <li>Likes - not normalized :(</li>
+              <li>Author (AdviceAnimals, No Chill, dankmemes, dankchristianmemes)</li>
+              <li>Network (Facebook, Imgur, Instagram, Twitter)</li>
+              <li>Link to post</li>
+              <li>Date of authorship</li>
+              <li>Extracted meme caption (text)</li>
+              <li>Derived features (Hillary topics, Trump topics, seasonality features)</li>
+            </ul>
+          </section>
+          <section>
+            <p>example of a meme transformed to a row in the data</p>
+          </section>
+        </section>
+
+        <!-- 1-3 histogram, distribution vs. histogram, predicted vs. actual -->
+        <section>
+          <section>
+            <h1 class="my-title num-title" id="title-1-hist">1</h1>
+          </section>
+          <section class="scrollable chart">
+            <h4 id="like-histogram-title">Distribution of likes</h4>
+            <div id="like-histogram"></div>
+          </section>
+          <section class="chart">
+            <h4>Distribution of likes across time</h4>
+            <div id="target-histogram"></div>
+          </section>
+          <section class="chart">
+            <h4>Topic 9</h4>
+            <div id="topic-word-distribution"></div>
+          </section>
+          <section class="chart">
+            <p>Meme --> topic distribution</p>
+          </section>
+          <section class="chart">
+            <h4>Distribution of likes across topic 9</h4>
+            <div id="topic-histogram"></div>
+            <div id="topics-section">
+
+            </div>
+          </section>
+          <section>
+            <p>Bernie Sanders with a dank meme</p>
+          </section>
+          <section>
+            <p class="my-header">Buy this model because:</p>
+            <ul>
+              <li>The Gini Norm is 0.933!!!!</li>
+              <li>A visual check showed the model performing well across variables Bernie is familiar with.</li>
+            </ul>
+          </section>
+          <section>
+            <p>We want high-quality memes</p>
+            <p>Army revolt sticker or meme</p>
+          </section>
+          <section>
+            <p class="my-header">Histogram: recap</p>
+            <ul>
+              <li>Data exploration</li>
+              <li>Detecting outliers</li>
+              <li>Underlayed: target, predicted vs. actual</li>
+              <li>
+                Provides context for other visualizations
+                <ul>
+                  <li>Target vs. distribution</li>
+                  <li>Predicted vs. actual</li>
+                </ul>
+              </li>
+              <li>Helps instill trust in user</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- MODEL EVALUATION: Lift chart -->
+        <section>
+          <section>
+            <h1 class="my-title num-title" id="title-4-lift">3</h1>
+          </section>
+          <section>
+            <h1 class="my-title" id="lift-title">Lift chart</h1>
+            <p>Measures overall model performance.</p>
+          </section>
+          <section class="chart">
+            <h4>Lift (Blender model)</h4>
+            <div id="lift"></div>
+          </section>
+          <section>
+            <p class="my-header">Lift chart: recap</p>
+            <ul>
+              <li>Look for fit between actual and predicted</li>
+              <li>Look for monotonicity of actual</li>
+              <li>Look for lift</li>
+              <li>Add quantiles for confidence interval estimate</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- FEATURE SELECTION: Partial dependence -->
+        <section>
+          <section>
+            <h1 class="my-title num-title" id="title-5-pd">4</h1>
+          </section>
+          <section>
+            <h1 class="my-title" id="pd-title">Partial dependence</h1>
+            <p>Plots the <i>marginal effect</i> of a predictor on the prediction.</p>
+          </section>
+          <section>
+            <p>"network" (source of meme)</p>
+            <p>Facebook, Instagram, Twitter, Imgur</p>
+          </section>
+          <section>
+            <p>1. Fix network = Instagram</p>
+          </section>
+          <section class="chart">
+            <h4>Validation data: Blender Model</h4>
+            <div id="pd-matrix"></div>
+          </section>
+          <section>
+            <p>2. Take average prediction from fixed matrix</p>
+            <p class="explanation">PD(network=instagram) = avg(F(network=instagram, Xc))</p>
+          </section>
+          <section class="chart">
+            <h4>Network</h4>
+            <div id="pd"></div>
+          </section>
+          <section>
+            <p class="my-header">Partial dependence: recap</p>
+            <ul>
+              <li>Shows relationship between predictor and prediction </li>
+              <li>Calculates marginal effect of a predictor by fixing it for each of its values</li>
+              <li>Does not take into account correlation with other variables</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Transition -->
+        <section>
+          <section class="chart">
+            <div id="tons-of-variables"></div>
+            <p>TODO: tons of variables animation</p>
+          </section>
+        </section>
+
+        <!-- UNDERSTANDING: Variable importances -->
+        <section>
+          <section>
+            <h1 class="my-title num-title" id="title-6-varimp">5</h1>
+          </section>
+          <section>
+            <h1 class="my-title" id="varimp-title">Variable importance</h1>
+            <p>Rank-orders variables by their influence on the target.</p>
+          </section>
+          <section>
+            <p>Example: calculate variable importance for caption</p>
+          </section>
+          <section>
+            <p>1. Shuffle caption column in validation data.</p>
+          </section>
+          <section class="chart">
+            <h4>Validation data: Blender model</h4>
+            <div id="var-imp1"></div>
+          </section>
+          <section>
+            <p>2. Predict on shuffled validation data.</p>
+          </section>
+          <section class="chart">
+            <h4>Prediction distribution</h4>
+            <div id="var-imp2"></div>
+          </section>
+          <section>
+            <p>3. Calculate importances with new scores.</p>
+            <p class="explanation">Importance(caption) = |Score(full_data) - Score(shuffled_data)|</p>
+          </section>
+          <section class="chart">
+            <h4>Importances</h4>
+            <div id="var-imp3"></div>
+          </section>
+          <section>
+            <p>topic1 -- meme example</p>
+          </section>
+          <section>
+            <p>topic2 -- meme example</p>
+          </section>
+          <section>
+            <p>topic3 -- Jeb Bush example</p>
+            <p>Poor Jeb had a short, but fraught, journey</p>
+          </section>
+          <section>
+            <p class="my-header">Variable importance: recap</p>
+            <ul>
+              <li>Common method is permutation importance</li>
+              <li>Provides insight into prediction problem</li>
+              <li>
+                Gives prioritization of features
+                <ul>
+                  <li>Improve feature engineering and modeling</li>
+                  <li>Reduce data collection costs</li>
+                </ul>
+              </li>
+              <li>Compare variable rankings across models</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Summary -->
+        <section>
+          <section>
+            <h1 class="my-title">Key takeaways</h1>
+          </section>
+          <section>
+            <p class="my-header">Most popular meme?</p>
+            <p>most popular meme</p>
+            <p>variables associated with it</p>
+          </section>
+          <section>
+            <p class="my-header">Least popular meme?</p>
+            <p>least popular meme</p>
+            <p>variables associated with it</p>
+          </section>
+          <section>
+            <p class="my-header">How to create a successful meme?</p>
+            <p>Already have successful memes</p>
+          </section>
+          <section>
+            <ul>
+              <li>Histograms provide context</li>
+              <li>Lift chart shows overall model performance</li>
+              <li>Partial dependence shows marginal effect of predictor on predicted outcome</li>
+              <li>Predicted vs. actual shows relationship between predictor and predicted outcome, taking into account correlations</li>
+              <li>Variable importances provide a prioritization of features</li>
+              <li>Start modeling early!</li>
+              <li>Interactivity is exploratory, engaging, and fun</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Thank you -->
+        <section>
+          <h1 class="my-title" id="thankyou">Thank you!</h1>
+          <p>goodbye meme</p>
+        </section>
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/d3.min.js"></script>
+
+    <script src="js/data.js"></script>
+    <script src="js/data_with_target.js"></script>
+    <script src="js/mom_diff_data.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/most_imp_features.js"></script>
+    <script src="js/importance_data.js"></script>
+
+    <script src="js/charts.js"></script>
+    <script src="js/lift.js"></script>
+    <script src="js/var-imp.js"></script>
+    <script src="js/partial_dependence.js"></script>
+
+    <script>
+      var fnMap = {};
+
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+
+      Reveal.addEventListener('ready', function(event) {
+        console.log('ready:', event.currentSlide, event.indexh, event.indexv);
+      });
+
+      Reveal.addEventListener('slidechanged', function(event) {
+         console.log('change:', event.previousSlide, event.currentSlide, event.indexh, event.indexv);
+         if (event.indexh in fnMap && event.indexv > 0) fnMap[event.indexh]();
+
+         // Histogram
+         if (event.indexh === 5) {
+            if (event.indexv === 1) likeHistogram();
+            else if (event.indexv === 2) likeOverTime();
+            else if (event.indexv === 3) topic9();
+            else if (event.indexv === 5) likesOverTopic9();
+         }
+
+         // Lift
+         if (event.indexh === 6 && event.indexv === 2) {
+            lift();
+         }
+
+         // Partial dependence
+         if (event.indexh === 7) {
+            if (event.indexv === 4) pdMatrix();
+            if (event.indexv === 6) partialDependence();
+         }
+
+         // 1000 variables
+         if (event.indexh === 8) {
+            $('#tons-of-variables').html('');
+            var n = 0;
+            var svg = d3.select('#tons-of-variables').append('svg').attr('height', 500).attr('width', 500);
+            var fdata = d3.range(1000);
+            var text = svg.append('text')
+              .attr('x', 70)
+              .attr('y', 250)
+              .attr('font-size', '60px')
+              .text('0 variables');
+            svg.selectAll('.f-data')
+              .data(fdata)
+              .enter()
+              .append('rect')
+              .attr('x', 0)
+              .attr('y', 0)
+              .attr('height', 0)
+              .attr('width', 0)
+              .transition()
+              .duration(2000)
+              .delay((d, i) => (i / 1000) * 2000)
+              .attr('x', 0)
+              .each('end', function(d, i) {
+                n += 1;
+                text.text(n + ' variables');
+              });
+         }
+
+         // Var imp
+         if (event.indexh == 9) {
+            if (event.indexv === 2) shuffleMatrix();
+            else if (event.indexv === 5) showDistributions();
+            else if (event.indexv === 8) showVarImp();
+         }
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h4 {
+  padding: 20px;
+}
+
+.cell {
+    margin-bottom: 25px;
+}
+
+.distribution-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.bar {
+  fill: #2D8FE2;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #D2D7D3;
+  shape-rendering: crispEdges;
+}
+
+.axis tick text {
+  font-size: 10px;
+}
+
+.xaxis path, .xaxis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+.xaxis text {
+  fill: #1C2739;
+  font-size: 10px;
+}
+
+.yaxis path, .yaxis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+.yaxis text {
+  fill: #1C2739;
+  font-size: 10px;
+}

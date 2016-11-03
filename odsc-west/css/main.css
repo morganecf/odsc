@@ -1,0 +1,269 @@
+/* General */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: #2D8FE2;
+  text-decoration: none;
+}
+
+button:focus {
+  outline: 0 !important;
+}
+
+.bar {
+  fill: #2D8FE2;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #D2D7D3;
+  shape-rendering: crispEdges;
+}
+
+.xaxis path, .xaxis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+.xaxis text {
+  fill: #1C2739;
+  font-size: 20px;
+}
+
+.yaxis path, .yaxis line {
+  fill: none;
+  stroke: #2D8FE2;
+  shape-rendering: crispEdges;
+}
+.yaxis text {
+  fill: #2D8FE2;
+  font-size: 20px;
+}
+
+.taxis path, .taxis line {
+  fill: none;
+  stroke: #FF5600;
+  shape-rendering: crispEdges;
+}
+.taxis text {
+  fill: #FF5600;
+  font-size: 20px;
+}
+
+.point {
+  fill: #FF5600;
+  stroke: #fff;
+  stroke-width: 2;
+}
+
+.mean-path {
+  fill: none;
+  stroke: #FF5600;
+  stroke-width: 2;
+}
+
+#content {
+  background: #EAF0F5;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+#buttons {
+  text-align: center;
+}
+
+/* Tooltips */
+.d3-tip {
+  line-height: 1;
+  font-size: 15px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 1);
+  color: #1C2739;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(255, 255, 255, 1);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.tip-data {
+  color: #000;
+  margin-left: 5px;
+  text-decoration: bold;
+}
+.tip-container {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.tip-container .row {
+  padding: 2px;
+}
+
+/* Hotspots */
+#hotspots-chart {
+    border-right: 1px solid #BAC5CE;
+}
+
+#rule-container {
+  float: right;
+  margin-top: 100px;
+}
+
+/* Force tooltips */
+.link, .link-tick {
+  stroke: #000;
+  stroke-width: 1;
+  stroke-opacity: .6;
+}
+
+.force-axis path, .force-axis line {
+  fill: none;
+  stroke: #000;
+  rendering: crispEdges;
+}
+
+/* Axis formatting options */
+.option {
+  padding: 20px;
+}
+
+/* Brush */
+.brush .extent {
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+.resize path {
+  fill: #666;
+  fill-opacity: .8;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+/* Lift chart */
+.act-point {
+  fill: #FF5600;
+  stroke: #fff;
+  stroke-width: 2;
+}
+.pred-point {
+  fill: #2D8FE2;
+  stroke: #fff;
+  stroke-width: 2;
+}
+.act-line {
+  stroke: #FF5600;
+  fill: none;
+  stroke-width: 2;
+}
+.pred-line {
+  stroke: #2D8FE2;
+  fill: none;
+  stroke-width: 2;
+}
+.lift-bar-background {
+  opacity: 0.15;
+  /*rx: 3;
+  ry: 3;*/
+}
+.lift-bar {
+  /*rx: 3;
+  ry: 3;*/
+}
+.lift-bar-pred {
+  fill: #2D8FE2;
+}
+.lift-bar-act {
+  fill: #FF5600;
+}
+.lift-dragger {
+  cursor: move;
+  opacity: 0.5;
+}
+
+#bin-select {
+  margin-left: 40px;
+}
+
+/* Histogram simulation */
+.heart-point {
+  /*stroke: #fff;
+  stroke-width: 2px;*/
+}
+.still-together {
+  fill: #E08283;
+}
+.broke-up {
+  fill: #5C97BF;
+}
+.heart-bar {
+  stroke: #E08283;
+  fill: none;
+}
+.heart-path {
+  stroke: #E08283;
+  stroke-width: 2;
+  fill: none;
+}
+.tg-path {
+  stroke: #5C97BF;
+  stroke-width: 2;
+  fill: none;
+}
+
+/* Importances */
+.col {
+  stroke: #fff;
+}
+.feature-label {
+  font-size: 10px;
+}
+.importance {
+  rx: 3;
+  ry: 3;
+}
+.importance-background {
+  fill: #DADFE1;
+  rx: 3;
+  ry: 3;
+}
+.importance-axis path, .importance-axis line {
+  fill: none;
+  stroke: none;
+}
+
+#diagonalHatch-OG path {
+  stroke: #E87E04;
+}
+#diagonalHatch-new path {
+  stroke: #3FC380;
+}
+
+#original-prediction {
+  fill: url(#diagonalHatch-OG);
+  stroke: #E87E04;
+  stroke-width: 2;
+}
+#new-prediction {
+  fill: url(#diagonalHatch-new);
+  stroke: #3FC380;
+  stroke-width: 2;
+}

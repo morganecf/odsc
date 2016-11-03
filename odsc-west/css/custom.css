@@ -1,0 +1,501 @@
+.slides {
+  width: 100% !important;
+}
+
+.scrollable {
+  bottom: 0px;
+  overflow-y: auto  !important;
+  overflow-x: hidden !important;
+}
+.chart {
+  height: 1000px;
+}
+
+.my-title {
+  font-size: 120px !important;
+}
+.my-header {
+  font-size: 70px !important;
+  font-weight: 800;
+}
+.my-header-2 {
+  font-size: 60px !important;
+  color: #D64541;
+  font-weight: 800;
+}
+
+.explanation {
+  font-size: 24px !important;
+  font-family: Georgia !important;
+}
+
+.num-title {
+  font-size: 1000px !important;
+  position: absolute !important;
+  color: #D64541 !important;
+  opacity: 0.4;
+}
+#title-6-viz {
+  margin-top: -260px;
+}
+#title-1-hist {
+  margin-top: -280px;
+}
+#histogram-title {
+  margin-top: 100px;
+  margin-left: 150px;
+}
+#title-2-hist {
+  margin-top: -300px;
+}
+#histogram-2-title {
+  text-align: right;
+}
+#histogram-3-title {
+  text-align: right;
+}
+#title-4-lift {
+  margin-top: -300px;
+  margin-left: -150px;
+}
+#lift-title {
+  margin-top: 330px;
+  margin-left: 350px;
+}
+#title-5-pd {
+  margin-top: -280px;
+}
+#pd-title {
+  margin-top: -40px;
+  margin-left: 200px;
+  text-align: right;
+}
+#title-6-varimp {
+  margin-top: -280px;
+}
+#varimp-title {
+  text-align: right;
+  margin-top: -40px;
+}
+#smiley {
+  margin-top: -400px;
+  font-size: 800px !important;
+  margin-left: 550px;
+}
+#thankyou {
+  /*margin-bottom: 300px;*/
+}
+
+#odsc-pic {
+  border: 0px solid black !important;
+  margin-left: 680px;
+}
+#ugly-plot {
+  margin-lefT: 140px;
+}
+
+.reveal section img {
+  border: 0px solid black !important;
+}
+
+/* Histograms - BE view */
+
+/*#bird-eye-histogram {
+  margin-top: 50px;
+}
+#bird-eye-histogram .distribution-title {
+  font-size: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#bird-eye-histogram .axis path, #bird-eye-histogram .axis line {
+  fill: none;
+  stroke: #D2D7D3;
+  shape-rendering: crispEdges;
+}
+#bird-eye-histogram .axis .tick text {
+  font-size: 10px;
+}
+#bird-eye-histogram .bar {
+  fill: #D64541;
+}
+#bird-eye-histogram .hist-path {
+  fill: none;
+  stroke: #D64541;
+  stroke-width: 2;
+}
+#bird-eye-histogram .target-point {
+  fill: #2D8FE2;
+  stroke: #fff;
+  stroke-width: 1;
+}
+#bird-eye-histogram .tg-path {
+  fill: none;
+  stroke: #2D8FE2;
+  stroke-width: 1;
+}
+*/
+
+/* Histogram */
+#like-histogram .axis path, #like-histogram .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#like-histogram .axis .tick text {
+  font-size: 12px;
+}
+#like-histogram .target-point {
+  fill: #FF5600;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#like-histogram .tg-path {
+  stroke: #FF5600;
+  fill: none;
+  stroke-width: 2;
+}
+#like-histogram .heart-bar {
+  fill: #e4002b;
+}
+#like-histogram .axis-label {
+  font-size: 14px;
+}
+
+/*
+  BLUE = 0057b8
+  RED = e4002b
+*/
+
+/* Histogram vs target */
+#target-histogram .axis path, #target-histogram .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#target-histogram .axis .tick text {
+  font-size: 12px;
+}
+#target-histogram .target-point {
+  fill: #e4002b;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#target-histogram .tg-path {
+  stroke: #e4002b;
+  fill: none;
+  stroke-width: 2;
+}
+#target-histogram .heart-bar {
+  fill: #0057b8;
+}
+#target-histogram .axis-label {
+  font-size: 14px;
+}
+
+/* Predicted vs. actual */
+#topic-histogram .axis path, #topic-histogram .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#topic-histogram .axis .tick text {
+  font-size: 12px;
+}
+#topic-histogram .target-point {
+  fill: #e4002b;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#topic-histogram .tg-path {
+  stroke: #e4002b;
+  fill: none;
+  stroke-width: 2;
+}
+#topic-histogram .heart-bar {
+  fill: #0057b8;
+}
+#topic-histogram .pred-point {
+  fill: #2D8FE2;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#topic-histogram .act-point {
+  fill: #FF5600;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#topic-histogram .act-path {
+  fill: none;
+  stroke: #FF5600;
+  stroke-width: 2;
+}
+#topic-histogram .pred-path {
+  fill: none;
+  stroke-width: 2;
+  stroke: #2D8FE2;
+}
+#topic-histogram .bar {
+  fill: #D64541;
+}
+#topic-histogram .axis-label {
+  font-size: 14px;
+}
+
+/* Histogram */
+#histogram .axis path, #histogram .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#histogram .axis .tick text {
+  font-size: 12px;
+}
+#histogram .heart-bar {
+  fill: #D64541;
+}
+#histogram .heart-path {
+  fill: none;
+  stroke: #D64541;
+  stroke-width: 2;
+}
+#histogram .tg-path {
+  fill: none;
+  stroke: #F64747;
+  stroke-width: 2;
+}
+#histogram-stats {
+  margin-top: -60px;
+}
+
+/* Lift */
+#lift .axis path, #lift .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#lift .axis .tick text {
+  font-size: 12px;
+}
+#lift .act-point {
+  fill: #e4002b;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#lift .pred-point {
+  fill: #0057b8;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#lift .act-line {
+  stroke: #e4002b;
+  fill: none;
+  stroke-width: 2;
+}
+#lift .pred-line {
+  stroke: #0057b8;
+  fill: none;
+  stroke-width: 2;
+}
+#lift .lift-bar-background {
+  opacity: 0.15;
+  /*rx: 3;
+  ry: 3;*/
+}
+#lift .lift-bar {
+  /*rx: 3;
+  ry: 3;*/
+}
+#lift .lift-bar-pred {
+  fill: #2D8FE2;
+}
+#lift .lift-bar-act {
+  fill: #FF5600;
+}
+#lift .lift-dragger {
+  cursor: move;
+  opacity: 0.5;
+}
+#lift .lift-stat {
+  font-size: 12px;
+}
+#lift .axis-label {
+  font-size: 14px;
+}
+#lift .lift-explanation {
+  font-size: 20px;
+}
+
+#lift .act-median-line {
+  fill: none;
+  stroke: #1C2739;
+}
+#lift .act-top10-line {
+  fill: none;
+  stroke: #e4002b;
+}
+#lift .act-top25-line {
+  fill: none;
+  stroke: #1C2739;
+}
+#lift .act-bottom10-line {
+  fill: none;
+  stroke: #e4002b;
+}
+#lift .act-bottom25-line {
+  fill: none;
+  stroke: #e4002b;
+}
+#lift .top10-fill-line {
+  fill: #e4002b;
+  opacity: 0.3;
+}
+#lift .bottom10-fill-line {
+  fill: #e4002b;
+  opacity: 0.3;
+}
+#lift .top25-fill-line {
+  fill: #1C2739;
+  opacity: 0.3;
+}
+#lift .bottom25-fill-line {
+  fill: #1C2739;
+  opacity: 0.3;
+}
+
+#lift .act-point-top10 {
+  fill: #e4002b;
+  stroke: #fff;
+}
+#lift .act-point-bottom10 {
+  fill: #e4002b;
+  stroke: #fff;
+}
+#lift .act-point-top25 {
+  fill: #1C2739;
+  stroke: #fff;
+}
+#lift .act-point-bottom25 {
+  fill: #1C2739;
+  stroke: #fff;
+}
+#lift .act-median-point {
+  fill: #1C2739;
+  stroke: #fff;
+}
+
+#bin-select {
+  font-size: 18px;
+  margin-top: -30px;
+  margin-left: 450px;
+}
+
+/* Var importance */
+#var-imp2 .axis path, #lift .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#var-imp2 .axis .tick text {
+  font-size: 12px;
+}
+
+#var-imp2 .legend-old {
+  fill: #E87E04;
+}
+#var-imp2 .legend-new {
+  fill: #3FC380;
+}
+#var-imp2 .legend-text {
+  font-size: 12px;
+}
+
+#diagonalHatch-OG path {
+  stroke: #E87E04;
+}
+#diagonalHatch-new path {
+  stroke: #3FC380;
+}
+
+#original-prediction {
+  fill: url(#diagonalHatch-OG);
+  stroke: #E87E04;
+  stroke-width: 2;
+}
+#new-prediction {
+  fill: url(#diagonalHatch-new);
+  stroke: #3FC380;
+  stroke-width: 2;
+}
+
+#var-imp1 .feature-label {
+  font-size: 10px;
+}
+#var-imp3 .importance {
+  rx: 3;
+  ry: 3;
+}
+#var-imp3 .importance-background {
+  fill: #DADFE1;
+  rx: 3;
+  ry: 3;
+}
+#var-imp3 .importance-axis path, #var-imp3 .importance-axis line {
+  fill: none;
+  stroke: none;
+}
+#var-imp3 .importance-axis .tick text {
+  font-size: 12px;
+}
+#var-imp3 .importance-label {
+  font-size: 12px;
+}
+
+/* Partial dependence */
+#pd .axis path, #pd .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#pd .axis .tick text {
+  font-size: 12px;
+}
+#pd .bar {
+  fill: #0057b8;
+}
+#pd .act-circle {
+  fill: #e4002b;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#pd .pred-circle {
+  fill: #0057b8;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#pd .pd-circle {
+  fill: #1C2739;
+  stroke: #fff;
+  stroke-width: 2;
+}
+#pd .axis-label {
+  font-size: 14px;
+}
+#pd #act-label {
+  fill: #e4002b;
+  stroke: none;
+}
+#pd #pred-label {
+  fill: #0057b8;
+  stroke: none;
+}
+#pd #pd-label {
+  fill: #1C2739;
+  stroke: none;
+}
+#pd #feature-label {
+  font-size: 20px;
+}
+#pd .feature-tick-label {
+  font-size: 20px;
+}

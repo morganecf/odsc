@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+        <!-- Title -->
+        <section>
+          Title
+        </section>
+
+        <!-- Intro -->
+        <section>Intro (about me)</section>
+
+        <!-- Summary -->
+        <section>Summary (thesis)</section>
+
+        <!-- Summary -->
+        <section>Summary (5 charts)</section>
+
+        <!-- Example problem -->
+        <section>A prediction problem: predicting romantic success</section>
+
+        <!-- What do we know about love? -->
+        <section>Leveraging expertise knowledge</section>
+
+        <!-- Potential features (Ex: Nero: !(crazy inbred roman emperor) -->
+        <section>Famous marriages that did not last</section>
+
+        <!-- Study overview -->
+        <section>Overview of study</section>
+
+        <!-- 1. The Histogram -->
+        <section>
+          <section>1. The histogram</section>
+          <section>
+            <h4>Difference in mothers' years of education</h4>
+            <div id="histogram"></div>
+            <div id="histogram-stats">
+              <p class="explanation" id="histogram-num-datapoints"></p>
+              <p class="explanation">
+                <span class="explanation" id="histogram-num-brokeup"></span>
+                <span class="explanation" id="histogram-num-still"></span>
+              </p>
+              <p class="explanation" id="histogram-num-bins"></p>
+            </div>
+          </section>
+        </section>
+
+        <!-- Bird's eye histogram view -->
+        <section class="scrollable">
+          <section>Data exploration</section>
+          <section>
+            <h4 id="bird-eye-histogram-title">A sample of numeric features</h4>
+            <div id="bird-eye-histogram"></div>
+          </section>
+        </section>
+
+        <section>Summary: histogram</section>
+
+        <section>Show categorical variables</section>
+
+        <!-- Build models -->
+        <section>Build models...nothing cool here</section>
+
+        <!-- MODEL EVALUATION: Lift chart -->
+        <section>
+          <section>2. Lift chart</section>
+          <section>
+            <h4>Best model: ENET Blender</h4>
+            <div id="lift"></div>
+            <div id="bin-select">
+              <span>Number of bins:</span>
+              <span>
+                <select>
+                  <option value="10">10</option>
+                  <option value="15">15</option>
+                  <option value="20">20</option>
+                  <option value="30">30</option>
+                  <option value="60">60</option>
+                </select>
+              </span>
+            </div>
+          </section>
+        </section>
+
+        <!-- MODEL COMPARISON: Dual lift chart -->
+        <section>Summary: lift</section>
+
+        <!-- FEATURE SELECTION: Partial dependence -->
+        <section>
+          <section>3. Partial dependence</section>
+          <section>
+            <h4>Perceived relationship quality</h4>
+            <div id="pd"></div>
+          </section>
+        </section>
+
+        <section>Summary: partial dependence</section>
+
+        <!-- UNDERSTANDING: Variable importances -->
+        <section>
+          <section>4. Variable importance</section>
+          <section>
+            <h4>Training data: ENET Blender</h4>
+            <p class="explanation">Calculate variable importance for parental_approval</p>
+            <div id="var-imp1"></div>
+            <p class="explanation">Step 1: Shuffle parental_approval column</p>
+          </section>
+          <section>
+            <h4>Prediction distribution</h4>
+            <div id="var-imp2"></div>
+            <p class="explanation">Step 2: Predict on training data</p>
+          </section>
+          <section>
+            <h4>Importances</h4>
+            <p class="explanation">Importance(parental_approval) = |Score(full_model) - Score(shuffled_model)|</p>
+            <div id="var-imp3"></div>
+            <p class="explanation">Step 3: Calculate importances with new scores</p>
+          </section>
+        </section>
+
+        <section>Summary: variable importance</section>
+
+        <!-- Summary -->
+        <section>Summary (overview of process)</section>
+
+        <!-- Final note -->
+        <section>A final note: the importance of interactivity</section>
+
+        <!-- Thank you -->
+        <section>Thank you</section>
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/d3.min.js"></script>
+
+    <script src="js/data.js"></script>
+    <script src="js/data_with_target.js"></script>
+    <script src="js/mom_diff_data.js"></script>
+    <script src="js/features.js"></script>
+    <script src="js/most_imp_features.js"></script>
+    <script src="js/importance_data.js"></script>
+
+    <script src="js/histograms.js"></script>
+    <script src="js/histogram_simulation.js"></script>
+    <script src="js/lift.js"></script>
+    <script src="js/var-imp.js"></script>
+    <script src="js/partial_dependence.js"></script>
+
+    <script>
+      var fnMap = {};
+
+      // More info https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        history: true,
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+
+      Reveal.addEventListener('ready', function(event) {
+        console.log('ready:', event.currentSlide, event.indexh, event.indexv);
+
+        fnMap[8] = histogramSimulation;
+        fnMap[9] = () => drawHistograms('#bird-eye-histogram');
+        fnMap[13] = lift;
+        fnMap[15] = partialDependence;
+      });
+
+      Reveal.addEventListener('slidechanged', function(event) {
+         console.log('change:', event.previousSlide, event.currentSlide, event.indexh, event.indexv);
+         if (event.indexh in fnMap && event.indexv > 0) fnMap[event.indexh]();
+
+         // Var imp
+         if (event.indexh == 17) {
+            if (event.indexv === 1) shuffleMatrix();
+            if (event.indexv === 2) showDistributions();
+            if (event.indexv === 3) showVarImp();
+         }
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+TO DO
+- remove datetime
+  --> or at least mention that it shouldn't be a variable
+  --> but seasonality features could be a derived variable
+- topic9
+  - horizontal bar chart
+  - fade histogram
+
+- topic
+  - stacked bar chart with top 5 topics across memes??
+
+- lift
+  - graph confident/not confident examples
+  - graph lift quantiles
+    - legend
+  - modify lift to be more lift-y
+- partial dependence
+  - get correct data
+  - insert correct data
+  - compute full/shuffled models??
+- importances
+  - insert correct data
+
+- quick note on model comparison: % error distribution for model comparison??
+
+- animation on front slide (climbing graph?)
+- number animations...or numbers on side with meme on the other side?
+
+- make charts same size
+- no repeat ticks
+
+*target should always be red and variables should be blue
