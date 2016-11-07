@@ -1,0 +1,119 @@
+Topic 0
+   b'"ago"' 0.027
+   b'"save"' 0.017
+   b'"hours"' 0.017
+   b'"report"' 0.011
+   b'"points"' 0.011
+   b'"gold"' 0.010
+   b'"give"' 0.010
+   b'"comments"' 0.009
+   b'"permalink"' 0.008
+   b'"source"' 0.007
+
+Topic 1
+   b'"trump"' 0.063
+   b'"pm"' 0.029
+   b'"donald"' 0.019
+   b'"2016"' 0.015
+   b'"likes"' 0.013
+   b'"16"' 0.013
+   b'"10"' 0.013
+   b'"12"' 0.012
+   b'"retweets"' 0.012
+   b'"11"' 0.011
+
+Topic 2
+   b'"trump"' 0.027
+   b'"like"' 0.022
+   b'"just"' 0.010
+   b'"people"' 0.009
+   b'"reply"' 0.008
+   b'"re"' 0.008
+   b'"can"' 0.007
+   b'"know"' 0.007
+   b'"will"' 0.007
+   b'"get"' 0.006
+
+Topic 3
+   b'"trump"' 0.082
+   b'"donald"' 0.017
+   b'"president"' 0.010
+   b'"new"' 0.008
+   b'"com"' 0.008
+   b'"news"' 0.007
+   b'"2016"' 0.005
+   b'"fuck"' 0.005
+   b'"can"' 0.005
+   b'"steve"' 0.005
+
+Topic 4
+   b'"hillary"' 0.035
+   b'"trump"' 0.031
+   b'"clinton"' 0.031
+   b'"donald"' 0.010
+   b'"george"' 0.007
+   b'"ago"' 0.006
+   b'"2016"' 0.006
+   b'"white"' 0.006
+   b'"11"' 0.005
+   b'"frog"' 0.005
+
+Topic 5
+   b'"trump"' 0.108
+   b'"donald"' 0.026
+   b'"hillary"' 0.020
+   b'"news"' 0.007
+   b'"obama"' 0.007
+   b'"clinton"' 0.007
+   b'"women"' 0.006
+   b'"wall"' 0.006
+   b'"wrong"' 0.006
+   b'"nbc"' 0.006
+
+Topic 6
+   b'"trump"' 0.038
+   b'"donald"' 0.012
+   b'"hillary"' 0.008
+   b'"com"' 0.007
+   b'"bill"' 0.006
+   b'"hate"' 0.005
+   b'"tho"' 0.005
+   b'"clinton"' 0.005
+   b'"people"' 0.005
+   b'"president"' 0.005
+
+Topic 7
+   b'"16"' 0.031
+   b'"anonymous"' 0.028
+   b'"id"' 0.020
+   b'"trump"' 0.012
+   b'"10"' 0.011
+   b'"kb"' 0.011
+   b'"05"' 0.010
+   b'"file"' 0.010
+   b'"09"' 0.008
+   b'"op"' 0.007
+
+Topic 8
+   b'"trump"' 0.051
+   b'"clinton"' 0.024
+   b'"hillary"' 0.018
+   b'"cnn"' 0.017
+   b'"debate"' 0.015
+   b'"vote"' 0.012
+   b'"news"' 0.011
+   b'"election"' 0.011
+   b'"2016"' 0.010
+   b'"bernie"' 0.009
+
+Topic 9
+   b'"trump"' 0.044
+   b'"donald"' 0.014
+   b'"will"' 0.012
+   b'"says"' 0.011
+   b'"isis"' 0.010
+   b'"make"' 0.008
+   b'"america"' 0.007
+   b'"great"' 0.007
+   b'"debate"' 0.007
+   b'"china"' 0.006

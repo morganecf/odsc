@@ -1,0 +1,35 @@
+FEATURES
+
+- network
+- author
+- caption
+  - bag of words model prob captures length
+  - but we could prob explicitly make this a variable?
+- publish time
+  - seasonality features:
+    - weekday
+    - day
+    - month
+    - hour
+- topics
+  - clinton topic distributions
+  - trump topic distributions
+
+
+IF HAVE TIME:
+- text and word length
+- more linguistic attributes...?
+
+- top /r/politics posts
+  - text
+  - sentiment
+  - #of times trump/hillary mentioned
+- image hash
+  - only IMGUR
+- twitter sentiment?
+- poll data??
+  - current
+  - previous (avg. of week before or day?)
+
+
+

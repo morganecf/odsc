@@ -1,0 +1,119 @@
+Topic 0
+   "ago" 0.027
+   "trump" 0.017
+   "hours" 0.014
+   "save" 0.011
+   "com" 0.010
+   "know" 0.009
+   "comments" 0.009
+   "report" 0.009
+   "points" 0.008
+   "donald" 0.007
+
+Topic 1
+   "like" 0.025
+   "trump" 0.017
+   "reply" 0.012
+   "people" 0.011
+   "just" 0.010
+   "will" 0.007
+   "can" 0.007
+   "don" 0.007
+   "re" 0.006
+   "get" 0.006
+
+Topic 2
+   "trump" 0.110
+   "hillary" 0.030
+   "donald" 0.025
+   "clinton" 0.020
+   "women" 0.011
+   "2016" 0.008
+   "pm" 0.008
+   "cnn" 0.007
+   "debate" 0.007
+   "re" 0.006
+
+Topic 3
+   "trump" 0.018
+   "pm" 0.014
+   "like" 0.011
+   "15" 0.010
+   "steve" 0.010
+   "just" 0.009
+   "wanna" 0.009
+   "12" 0.007
+   "11" 0.007
+   "fighting" 0.007
+
+Topic 4
+   "trump" 0.035
+   "donald" 0.009
+   "de" 0.008
+   "el" 0.006
+   "biden" 0.006
+   "tay" 0.006
+   "usa" 0.006
+   "wall" 0.005
+   "like" 0.005
+   "tweets" 0.005
+
+Topic 5
+   "trump" 0.038
+   "donald" 0.013
+   "like" 0.011
+   "teacher" 0.008
+   "george" 0.007
+   "melania" 0.006
+   "sign" 0.006
+   "thing" 0.006
+   "bush" 0.006
+   "ya" 0.005
+
+Topic 6
+   "trump" 0.058
+   "america" 0.016
+   "make" 0.014
+   "donald" 0.011
+   "great" 0.009
+   "says" 0.009
+   "debate" 0.006
+   "text" 0.006
+   "hillary" 0.005
+   "live" 0.005
+
+Topic 7
+   "trump" 0.016
+   "news" 0.013
+   "nbc" 0.010
+   "puppet" 0.009
+   "omar" 0.007
+   "2016" 0.006
+   "clinton" 0.006
+   "truth" 0.005
+   "mateen" 0.005
+   "hes" 0.005
+
+Topic 8
+   "16" 0.037
+   "10" 0.022
+   "pm" 0.019
+   "anonymous" 0.016
+   "id" 0.011
+   "12" 0.010
+   "likes" 0.010
+   "trump" 0.010
+   "retweets" 0.009
+   "11" 0.008
+
+Topic 9
+   "trump" 0.062
+   "donald" 0.012
+   "obama" 0.012
+   "president" 0.011
+   "2016" 0.010
+   "clinton" 0.005
+   "will" 0.005
+   "live" 0.005
+   "presidential" 0.005
+   "new" 0.005

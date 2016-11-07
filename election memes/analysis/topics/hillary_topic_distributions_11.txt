@@ -1,0 +1,119 @@
+Topic 0
+   b'"hillary"' 0.022
+   b'"clinton"' 0.021
+   b'"debate"' 0.009
+   b'"live"' 0.009
+   b'"news"' 0.009
+   b'"msnbc"' 0.008
+   b'"cnn"' 0.007
+   b'"breaking"' 0.007
+   b'"trump"' 0.007
+   b'"just"' 0.005
+
+Topic 1
+   b'"hillary"' 0.023
+   b'"clinton"' 0.008
+   b'"people"' 0.008
+   b'"will"' 0.004
+   b'"said"' 0.004
+   b'"know"' 0.004
+   b'"one"' 0.004
+   b'"time"' 0.003
+   b'"love"' 0.003
+   b'"get"' 0.003
+
+Topic 2
+   b'"hillary"' 0.046
+   b'"clinton"' 0.030
+   b'"trump"' 0.013
+   b'"news"' 0.011
+   b'"information"' 0.009
+   b'"2016"' 0.008
+   b'"bullshit"' 0.008
+   b'"said"' 0.008
+   b'"lead"' 0.008
+   b'"arrest"' 0.007
+
+Topic 3
+   b'"hillary"' 0.058
+   b'"trump"' 0.052
+   b'"clinton"' 0.041
+   b'"donald"' 0.025
+   b'"2016"' 0.009
+   b'"president"' 0.007
+   b'"says"' 0.007
+   b'"pm"' 0.006
+   b'"debate"' 0.005
+   b'"follow"' 0.005
+
+Topic 4
+   b'"like"' 0.025
+   b'"hillary"' 0.020
+   b'"can"' 0.012
+   b'"reply"' 0.011
+   b'"just"' 0.010
+   b'"clinton"' 0.008
+   b'"don"' 0.007
+   b'"people"' 0.007
+   b'"will"' 0.007
+   b'"trump"' 0.007
+
+Topic 5
+   b'"ago"' 0.038
+   b'"hours"' 0.021
+   b'"reply"' 0.019
+   b'"like"' 0.018
+   b'"save"' 0.018
+   b'"comments"' 0.014
+   b'"points"' 0.012
+   b'"report"' 0.011
+   b'"share"' 0.010
+   b'"give"' 0.009
+
+Topic 6
+   b'"16"' 0.029
+   b'"hillary"' 0.022
+   b'"trump"' 0.019
+   b'"10"' 0.017
+   b'"clinton"' 0.016
+   b'"anonymous"' 0.015
+   b'"id"' 0.012
+   b'"pm"' 0.009
+   b'"kb"' 0.007
+   b'"11"' 0.007
+
+Topic 7
+   b'"hillary"' 0.051
+   b'"clinton"' 0.025
+   b'"vote"' 0.014
+   b'"trump"' 0.014
+   b'"matter"' 0.010
+   b'"bernie"' 0.010
+   b'"will"' 0.009
+   b'"issues"' 0.008
+   b'"issue"' 0.008
+   b'"compare"' 0.007
+
+Topic 8
+   b'"hillary"' 0.023
+   b'"clinton"' 0.014
+   b'"bill"' 0.011
+   b'"obama"' 0.009
+   b'"women"' 0.008
+   b'"just"' 0.006
+   b'"trump"' 0.006
+   b'"want"' 0.005
+   b'"people"' 0.005
+   b'"can"' 0.005
+
+Topic 9
+   b'"trump"' 0.030
+   b'"hillary"' 0.028
+   b'"com"' 0.010
+   b'"like"' 0.009
+   b'"clinton"' 0.009
+   b'"us"' 0.008
+   b'"just"' 0.008
+   b'"go"' 0.008
+   b'"parents"' 0.006
+   b'"fighting"' 0.006

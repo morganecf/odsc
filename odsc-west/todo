@@ -1,32 +1,35 @@
 TO DO
-- remove datetime
-  --> or at least mention that it shouldn't be a variable
-  --> but seasonality features could be a derived variable
-- topic9
-  - horizontal bar chart
-  - fade histogram
-
-- topic
-  - stacked bar chart with top 5 topics across memes??
 
 - lift
-  - graph confident/not confident examples
-  - graph lift quantiles
-    - legend
-  - modify lift to be more lift-y
-- partial dependence
-  - get correct data
-  - insert correct data
-  - compute full/shuffled models??
-- importances
-  - insert correct data
+  --> exposing more information about the variance in each bin is important to get
+  a better diagnostic on how the model is doing
+
+- importances -- correct data for prediction distributions
+  --> how do we pick which topics are the most important?
 
 - quick note on model comparison: % error distribution for model comparison??
 
 - animation on front slide (climbing graph?)
 - number animations...or numbers on side with meme on the other side?
+  --> show top meme for each number
 
 - make charts same size
 - no repeat ticks
+- *target should always be red and variables should be blue
 
-*target should always be red and variables should be blue
+datetime feature
+ --> or at least mention that it shouldn't be a variable
+  --> but seasonality features could be a derived variable
+
+disclosure: did give a similar talk at ODSC Boston, if you walk away i won't be offended
+I guess that includes some of my coworkers and my boss
+
+show of hands -- who knows about memes?
+who knows about dank memes?
+i'm of the generation that contains humans who actually dressed as memes
+for halloween but i recognize i could be living in some kind of horrific vacuous bubble
+i'm going to reinforce all stereotypes about millennials in this talk
+
+(LDA) you can think of it essentially as a clustering algorithm that infers topics from
+a collection of text documents, through the word distributions that are in the documents
+and learned assumptions the model makes about the mixture of topics throughout the documents.

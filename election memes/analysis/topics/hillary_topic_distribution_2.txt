@@ -1,0 +1,119 @@
+Topic 0
+   "hillary" 0.033
+   "16" 0.021
+   "clinton" 0.020
+   "10" 0.013
+   "trump" 0.012
+   "anonymous" 0.010
+   "pm" 0.008
+   "id" 0.008
+   "com" 0.007
+   "11" 0.006
+
+Topic 1
+   "ago" 0.040
+   "reply" 0.032
+   "like" 0.028
+   "hours" 0.021
+   "save" 0.019
+   "comments" 0.017
+   "share" 0.015
+   "comment" 0.014
+   "points" 0.013
+   "report" 0.012
+
+Topic 2
+   "hillary" 0.037
+   "trump" 0.026
+   "clinton" 0.020
+   "dab" 0.009
+   "bullshit" 0.008
+   "said" 0.007
+   "donald" 0.006
+   "msnbc" 0.006
+   "live" 0.006
+   "dumb" 0.005
+
+Topic 3
+   "hillary" 0.044
+   "clinton" 0.018
+   "trump" 0.018
+   "america" 0.011
+   "says" 0.009
+   "can" 0.008
+   "like" 0.007
+   "re" 0.006
+   "voting" 0.006
+   "will" 0.006
+
+Topic 4
+   "clinton" 0.022
+   "bill" 0.019
+   "hillary" 0.015
+   "com" 0.012
+   "monica" 0.004
+   "sexual" 0.004
+   "center" 0.004
+   "black" 0.003
+   "live" 0.003
+   "nyc" 0.003
+
+Topic 5
+   "hillary" 0.024
+   "trump" 0.015
+   "like" 0.014
+   "will" 0.010
+   "vote" 0.010
+   "clinton" 0.009
+   "president" 0.009
+   "can" 0.009
+   "just" 0.008
+   "one" 0.008
+
+Topic 6
+   "hillary" 0.024
+   "people" 0.010
+   "will" 0.009
+   "information" 0.008
+   "like" 0.007
+   "lead" 0.006
+   "arrest" 0.005
+   "clinton" 0.005
+   "black" 0.005
+   "hrs" 0.005
+
+Topic 7
+   "trump" 0.060
+   "hillary" 0.058
+   "clinton" 0.044
+   "donald" 0.026
+   "news" 0.014
+   "debate" 0.012
+   "2016" 0.011
+   "pm" 0.010
+   "cnn" 0.007
+   "com" 0.006
+
+Topic 8
+   "hillary" 0.027
+   "clinton" 0.010
+   "obama" 0.008
+   "trump" 0.008
+   "will" 0.005
+   "time" 0.004
+   "campaign" 0.004
+   "2016" 0.004
+   "know" 0.004
+   "just" 0.004
+
+Topic 9
+   "hillary" 0.053
+   "clinton" 0.021
+   "bernie" 0.018
+   "issues" 0.014
+   "matter" 0.013
+   "issue" 0.013
+   "compare" 0.012
+   "informed" 0.012
+   "com" 0.006
+   "cons" 0.006

@@ -1,0 +1,119 @@
+Topic 0
+   b'"hillary"' 0.019
+   b'"16"' 0.018
+   b'"anonymous"' 0.018
+   b'"id"' 0.014
+   b'"clinton"' 0.011
+   b'"kb"' 0.008
+   b'"09"' 0.007
+   b'"file"' 0.006
+   b'"10"' 0.006
+   b'"jpg"' 0.005
+
+Topic 1
+   b'"hillary"' 0.071
+   b'"clinton"' 0.038
+   b'"bernie"' 0.014
+   b'"issues"' 0.014
+   b'"issue"' 0.013
+   b'"matter"' 0.013
+   b'"compare"' 0.012
+   b'"informed"' 0.011
+   b'"2016"' 0.008
+   b'"com"' 0.007
+
+Topic 2
+   b'"hillary"' 0.026
+   b'"ago"' 0.013
+   b'"like"' 0.013
+   b'"minutes"' 0.011
+   b'"clinton"' 0.009
+   b'"trump"' 0.007
+   b'"don"' 0.006
+   b'"democrats"' 0.006
+   b'"occupy"' 0.005
+   b'"hey"' 0.005
+
+Topic 3
+   b'"hillary"' 0.040
+   b'"trump"' 0.011
+   b'"clinton"' 0.010
+   b'"go"' 0.009
+   b'"just"' 0.009
+   b'"like"' 0.009
+   b'"us"' 0.008
+   b'"two"' 0.008
+   b'"will"' 0.007
+   b'"hate"' 0.006
+
+Topic 4
+   b'"hillary"' 0.064
+   b'"trump"' 0.041
+   b'"donald"' 0.026
+   b'"clinton"' 0.023
+   b'"cons"' 0.006
+   b'"pros"' 0.006
+   b'"com"' 0.006
+   b'"said"' 0.005
+   b'"supporters"' 0.005
+   b'"bullshit"' 0.005
+
+Topic 5
+   b'"like"' 0.023
+   b'"hillary"' 0.017
+   b'"reply"' 0.013
+   b'"can"' 0.011
+   b'"just"' 0.010
+   b'"trump"' 0.009
+   b'"vote"' 0.008
+   b'"one"' 0.007
+   b'"people"' 0.007
+   b'"will"' 0.007
+
+Topic 6
+   b'"save"' 0.024
+   b'"ago"' 0.022
+   b'"hours"' 0.020
+   b'"report"' 0.015
+   b'"com"' 0.012
+   b'"comments"' 0.011
+   b'"gold"' 0.011
+   b'"points"' 0.011
+   b'"hillary"' 0.010
+   b'"give"' 0.010
+
+Topic 7
+   b'"hillary"' 0.023
+   b'"clinton"' 0.014
+   b'"women"' 0.007
+   b'"years"' 0.007
+   b'"000"' 0.005
+   b'"people"' 0.005
+   b'"com"' 0.004
+   b'"can"' 0.004
+   b'"bill"' 0.004
+   b'"trump"' 0.004
+
+Topic 8
+   b'"clinton"' 0.022
+   b'"hillary"' 0.019
+   b'"trump"' 0.015
+   b'"bill"' 0.009
+   b'"says"' 0.008
+   b'"cnn"' 0.008
+   b'"debate"' 0.007
+   b'"news"' 0.006
+   b'"president"' 0.006
+   b'"new"' 0.006
+
+Topic 9
+   b'"trump"' 0.057
+   b'"hillary"' 0.051
+   b'"clinton"' 0.040
+   b'"donald"' 0.023
+   b'"pm"' 0.018
+   b'"2016"' 0.014
+   b'"16"' 0.011
+   b'"retweets"' 0.010
+   b'"likes"' 0.009
+   b'"10"' 0.009

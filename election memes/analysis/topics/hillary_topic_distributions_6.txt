@@ -1,0 +1,59 @@
+Topic 0
+   b'"16"' 0.020
+   b'"anonymous"' 0.018
+   b'"id"' 0.014
+   b'"10"' 0.010
+   b'"kb"' 0.008
+   b'"com"' 0.008
+   b'"09"' 0.007
+   b'"file"' 0.006
+   b'"trump"' 0.005
+   b'"youtube"' 0.005
+
+Topic 1
+   b'"hillary"' 0.036
+   b'"trump"' 0.024
+   b'"says"' 0.015
+   b'"clinton"' 0.012
+   b'"don"' 0.009
+   b'"make"' 0.007
+   b'"know"' 0.006
+   b'"000"' 0.006
+   b'"america"' 0.006
+   b'"people"' 0.006
+
+Topic 2
+   b'"hillary"' 0.029
+   b'"trump"' 0.011
+   b'"clinton"' 0.010
+   b'"emails"' 0.008
+   b'"release"' 0.005
+   b'"one"' 0.005
+   b'"women"' 0.004
+   b'"campaign"' 0.004
+   b'"called"' 0.004
+   b'"said"' 0.004
+
+Topic 3
+   b'"like"' 0.047
+   b'"reply"' 0.024
+   b'"hillary"' 0.019
+   b'"clinton"' 0.016
+   b'"ago"' 0.013
+   b'"comment"' 0.013
+   b'"hrs"' 0.012
+   b'"share"' 0.010
+   b'"mins"' 0.008
+   b'"pm"' 0.008
+
+Topic 4
+   b'"hillary"' 0.048
+   b'"clinton"' 0.021
+   b'"bill"' 0.012
+   b'"com"' 0.011
+   b'"black"' 0.006
+   b'"women"' 0.006
+   b'"dab"' 0.005
+   b'"can"' 0.005
+   b'"got"' 0.005
+   b'"one"' 0.005

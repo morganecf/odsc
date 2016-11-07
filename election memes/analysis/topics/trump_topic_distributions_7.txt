@@ -1,0 +1,59 @@
+Topic 0
+   b'"trump"' 0.031
+   b'"16"' 0.018
+   b'"anonymous"' 0.015
+   b'"hillary"' 0.012
+   b'"id"' 0.011
+   b'"donald"' 0.009
+   b'"10"' 0.006
+   b'"george"' 0.006
+   b'"fuck"' 0.006
+   b'"kb"' 0.006
+
+Topic 1
+   b'"trump"' 0.049
+   b'"donald"' 0.016
+   b'"like"' 0.009
+   b'"pussy"' 0.005
+   b'"grab"' 0.005
+   b'"wall"' 0.005
+   b'"america"' 0.005
+   b'"re"' 0.005
+   b'"women"' 0.004
+   b'"make"' 0.004
+
+Topic 2
+   b'"trump"' 0.074
+   b'"donald"' 0.020
+   b'"clinton"' 0.016
+   b'"hillary"' 0.016
+   b'"pm"' 0.013
+   b'"2016"' 0.012
+   b'"news"' 0.008
+   b'"president"' 0.007
+   b'"debate"' 0.006
+   b'"com"' 0.005
+
+Topic 3
+   b'"trump"' 0.018
+   b'"ago"' 0.017
+   b'"save"' 0.011
+   b'"hours"' 0.010
+   b'"donald"' 0.008
+   b'"report"' 0.007
+   b'"comments"' 0.006
+   b'"points"' 0.006
+   b'"gold"' 0.006
+   b'"permalink"' 0.005
+
+Topic 4
+   b'"trump"' 0.025
+   b'"like"' 0.018
+   b'"people"' 0.008
+   b'"just"' 0.008
+   b'"reply"' 0.008
+   b'"can"' 0.007
+   b'"will"' 0.006
+   b'"know"' 0.006
+   b'"re"' 0.006
+   b'"don"' 0.006

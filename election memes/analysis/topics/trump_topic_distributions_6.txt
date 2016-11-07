@@ -1,0 +1,59 @@
+Topic 0
+   b'"trump"' 0.043
+   b'"like"' 0.027
+   b'"just"' 0.011
+   b'"people"' 0.010
+   b'"re"' 0.009
+   b'"can"' 0.008
+   b'"donald"' 0.008
+   b'"don"' 0.008
+   b'"know"' 0.006
+   b'"will"' 0.006
+
+Topic 1
+   b'"trump"' 0.025
+   b'"obama"' 0.016
+   b'"will"' 0.010
+   b'"says"' 0.007
+   b'"white"' 0.006
+   b'"time"' 0.006
+   b'"president"' 0.006
+   b'"donald"' 0.006
+   b'"make"' 0.005
+   b'"teacher"' 0.005
+
+Topic 2
+   b'"de"' 0.009
+   b'"trump"' 0.009
+   b'"omar"' 0.008
+   b'"el"' 0.007
+   b'"mateen"' 0.005
+   b'"memes"' 0.005
+   b'"donald"' 0.005
+   b'"que"' 0.004
+   b'"del"' 0.004
+   b'"prison"' 0.004
+
+Topic 3
+   b'"trump"' 0.110
+   b'"hillary"' 0.042
+   b'"clinton"' 0.036
+   b'"debate"' 0.020
+   b'"news"' 0.015
+   b'"donald"' 0.014
+   b'"cnn"' 0.013
+   b'"live"' 0.011
+   b'"presidential"' 0.009
+   b'"election"' 0.009
+
+Topic 4
+   b'"ago"' 0.025
+   b'"reply"' 0.015
+   b'"hours"' 0.011
+   b'"save"' 0.010
+   b'"comments"' 0.009
+   b'"report"' 0.008
+   b'"minutes"' 0.007
+   b'"can"' 0.006
+   b'"points"' 0.006
+   b'"give"' 0.006

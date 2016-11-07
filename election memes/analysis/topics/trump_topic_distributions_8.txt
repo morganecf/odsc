@@ -1,0 +1,119 @@
+Topic 0
+   b'"trump"' 0.050
+   b'"donald"' 0.027
+   b'"pm"' 0.025
+   b'"likes"' 0.018
+   b'"retweets"' 0.017
+   b'"2016"' 0.016
+   b'"follow"' 0.011
+   b'"16"' 0.011
+   b'"12"' 0.009
+   b'"10"' 0.008
+
+Topic 1
+   b'"16"' 0.035
+   b'"anonymous"' 0.022
+   b'"10"' 0.020
+   b'"id"' 0.015
+   b'"pm"' 0.015
+   b'"15"' 0.012
+   b'"12"' 0.011
+   b'"kb"' 0.009
+   b'"11"' 0.008
+   b'"05"' 0.008
+
+Topic 2
+   b'"save"' 0.021
+   b'"report"' 0.012
+   b'"gold"' 0.012
+   b'"give"' 0.010
+   b'"trump"' 0.009
+   b'"ago"' 0.008
+   b'"embed"' 0.008
+   b'"parent"' 0.008
+   b'"permalink"' 0.008
+   b'"res"' 0.008
+
+Topic 3
+   b'"like"' 0.029
+   b'"reply"' 0.015
+   b'"people"' 0.013
+   b'"just"' 0.011
+   b'"trump"' 0.009
+   b'"don"' 0.008
+   b'"can"' 0.007
+   b'"know"' 0.007
+   b'"re"' 0.007
+   b'"one"' 0.007
+
+Topic 4
+   b'"trump"' 0.071
+   b'"hillary"' 0.025
+   b'"debate"' 0.018
+   b'"clinton"' 0.015
+   b'"donald"' 0.015
+   b'"president"' 0.014
+   b'"cnn"' 0.011
+   b'"presidential"' 0.009
+   b'"live"' 0.007
+   b'"obama"' 0.007
+
+Topic 5
+   b'"ago"' 0.017
+   b'"donald"' 0.017
+   b'"trump"' 0.016
+   b'"com"' 0.015
+   b'"comments"' 0.008
+   b'"hours"' 0.008
+   b'"www"' 0.005
+   b'"reddit"' 0.005
+   b'"share"' 0.004
+   b'"points"' 0.004
+
+Topic 6
+   b'"trump"' 0.059
+   b'"donald"' 0.011
+   b'"will"' 0.011
+   b'"like"' 0.008
+   b'"women"' 0.007
+   b'"hillary"' 0.007
+   b'"president"' 0.006
+   b'"just"' 0.006
+   b'"us"' 0.006
+   b'"can"' 0.006
+
+Topic 7
+   b'"trump"' 0.056
+   b'"donald"' 0.012
+   b'"can"' 0.012
+   b'"america"' 0.010
+   b'"back"' 0.009
+   b'"make"' 0.008
+   b'"country"' 0.008
+   b'"bernie"' 0.008
+   b'"get"' 0.007
+   b'"great"' 0.007
+
+Topic 8
+   b'"trump"' 0.084
+   b'"hillary"' 0.023
+   b'"clinton"' 0.018
+   b'"donald"' 0.017
+   b'"news"' 0.012
+   b'"know"' 0.006
+   b'"2016"' 0.006
+   b'"america"' 0.005
+   b'"live"' 0.005
+   b'"says"' 0.005
+
+Topic 9
+   b'"trump"' 0.047
+   b'"donald"' 0.016
+   b'"fuck"' 0.010
+   b'"pussy"' 0.010
+   b'"like"' 0.009
+   b'"said"' 0.008
+   b'"racist"' 0.007
+   b'"grab"' 0.007
+   b'"can"' 0.006
+   b'"women"' 0.006

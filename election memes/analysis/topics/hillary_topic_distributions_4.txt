@@ -1,0 +1,119 @@
+Topic 0
+   b'"hillary"' 0.020
+   b'"com"' 0.016
+   b'"obama"' 0.015
+   b'"president"' 0.010
+   b'"barack"' 0.009
+   b'"clinton"' 0.008
+   b'"youtube"' 0.007
+   b'"www"' 0.007
+   b'"2016"' 0.006
+   b'"one"' 0.005
+
+Topic 1
+   b'"trump"' 0.040
+   b'"hillary"' 0.030
+   b'"clinton"' 0.030
+   b'"donald"' 0.015
+   b'"pm"' 0.013
+   b'"news"' 0.012
+   b'"live"' 0.012
+   b'"debate"' 0.009
+   b'"10"' 0.009
+   b'"cnn"' 0.008
+
+Topic 2
+   b'"clinton"' 0.023
+   b'"hillary"' 0.019
+   b'"bill"' 0.012
+   b'"like"' 0.009
+   b'"google"' 0.007
+   b'"said"' 0.007
+   b'"ago"' 0.006
+   b'"song"' 0.006
+   b'"day"' 0.006
+   b'"2016"' 0.005
+
+Topic 3
+   b'"hillary"' 0.023
+   b'"like"' 0.019
+   b'"trump"' 0.012
+   b'"can"' 0.009
+   b'"just"' 0.009
+   b'"reply"' 0.008
+   b'"people"' 0.008
+   b'"bernie"' 0.006
+   b'"know"' 0.006
+   b'"clinton"' 0.005
+
+Topic 4
+   b'"hillary"' 0.027
+   b'"clinton"' 0.022
+   b'"16"' 0.019
+   b'"anonymous"' 0.016
+   b'"id"' 0.012
+   b'"says"' 0.009
+   b'"trump"' 0.008
+   b'"kb"' 0.007
+   b'"10"' 0.007
+   b'"09"' 0.007
+
+Topic 5
+   b'"hillary"' 0.093
+   b'"clinton"' 0.051
+   b'"trump"' 0.032
+   b'"donald"' 0.021
+   b'"will"' 0.010
+   b'"2016"' 0.010
+   b'"vote"' 0.009
+   b'"com"' 0.009
+   b'"retweets"' 0.007
+   b'"president"' 0.007
+
+Topic 6
+   b'"ago"' 0.030
+   b'"hours"' 0.020
+   b'"save"' 0.019
+   b'"report"' 0.014
+   b'"comments"' 0.014
+   b'"points"' 0.013
+   b'"give"' 0.009
+   b'"gold"' 0.009
+   b'"reply"' 0.008
+   b'"permalink"' 0.008
+
+Topic 7
+   b'"hillary"' 0.048
+   b'"trump"' 0.037
+   b'"clinton"' 0.022
+   b'"re"' 0.009
+   b'"occupy"' 0.008
+   b'"donald"' 0.007
+   b'"democrats"' 0.007
+   b'"puppet"' 0.006
+   b'"debate"' 0.006
+   b'"women"' 0.006
+
+Topic 8
+   b'"hillary"' 0.021
+   b'"clinton"' 0.007
+   b'"police"' 0.005
+   b'"black"' 0.005
+   b'"pokemon"' 0.005
+   b'"lives"' 0.004
+   b'"trump"' 0.004
+   b'"fbi"' 0.004
+   b'"matter"' 0.004
+   b'"dallas"' 0.004
+
+Topic 9
+   b'"hillary"' 0.031
+   b'"will"' 0.009
+   b'"clinton"' 0.008
+   b'"000"' 0.008
+   b'"one"' 0.006
+   b'"trump"' 0.006
+   b'"never"' 0.005
+   b'"people"' 0.005
+   b'"don"' 0.005
+   b'"wrong"' 0.005

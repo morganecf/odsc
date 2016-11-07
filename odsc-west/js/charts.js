@@ -157,7 +157,7 @@ function likeHistogram() {
 
 function likeOverTime() {
     var jWidth = 1400;
-    var jHeight = 400;
+    var jHeight = 500;
 
     var margin = {top: 20, right: 10, bottom: 30, left: 80};
     var width = jWidth - 200 - margin.left - margin.right;
@@ -276,10 +276,348 @@ function likeOverTime() {
 }
 
 function topic9() {
+    var jWidth = 1400;
+    var jHeight = 600;
 
+    var margin = {top: 20, right: 10, bottom: 30, left: 80};
+    var width = jWidth - 200 - margin.left - margin.right;
+    var height = jHeight - margin.top - margin.bottom;
+    var chartMargin = {left: 100, bottom: 20};
+
+    $('#topic-word-distribution').html('');
+
+    var svg = d3.select('#topic-word-distribution').append('svg')
+        .attr('width', width + margin.left + margin.right + chartMargin.left + 40)
+        .attr('height', height + margin.bottom + margin.top + chartMargin.bottom + 40);
+
+    // var startpos = (margin.left + (width / 2) - 300);
+    var startpos = margin.left + 50;
+
+    // % Axis
+    var extent = [0, 0.02];
+    var scale = d3.scale.linear().range([0, width]).domain(extent);
+    var axis = d3.svg.axis().scale(scale).orient('top');
+    var axisSvg = svg.append('g')
+      .attr('class', 'axis')
+      .attr('transform', 'translate(' + startpos + ', ' + (margin.top + 50) + ')')
+      .call(axis);
+
+   // The "self-referential deep internet alt-right" topic
+    var words = [
+        ['trump', 0.016],
+        ['like', 0.009],
+        ['white', 0.009],
+        ['just', 0.006],
+        ['frog', 0.005],
+        ['cuck', 0.004],
+        ['new', 0.004],
+        ['meme', 0.004],
+        ['somebody', 0.003],
+        ['pepe', 0.0003],
+    ];
+
+    // Words
+    svg.selectAll('.topic-word')
+        .data(words)
+        .enter()
+        .append('text')
+        .attr('x', margin.left - 50)
+        .attr('y', (d, i) => (margin.top + 90) + (i * 40))
+        .attr('class', 'topic-word')
+        .attr('opacity', 1)
+        .text(d => d[0]);
+
+    // Background
+    var bk = svg.selectAll('.topic-word-bk')
+        .data(words)
+        .enter()
+        .append('rect')
+        .attr('class', 'topic-word-bk')
+        .attr('x', startpos)
+        .attr('y', (d, i) => (margin.top + 70) + (i * 40))
+        .attr('width', width)
+        .attr('height', 21)
+        .attr('opacity', 1);
+
+    // Probabilities
+    var imp = svg.selectAll('.topic-word-prob')
+        .data(words)
+        .enter()
+        .append('rect')
+        .attr('class', 'topic-word-prob')
+        .attr('x', startpos)
+        .attr('y', (d, i) => (margin.top + 70) + (i * 40) + 7)
+        .attr('width', 0)
+        .attr('height', 7)
+        .attr('opacity', 0);
+
+    function showProbabilities() {
+        imp.transition()
+            .duration(400)
+            .delay((d, i) => i * 40)
+            .attr('width', d => scale(d[1]))
+            .attr('opacity', 1);
+    }
+
+    var fnStack = [showProbabilities];
+    $(document).keypress(function(e) {
+        if (e.which === 109) {
+            if (fnStack.length > 0) fnStack.shift()();
+        }
+    });
 }
 
-function likesOverTopic9() {
+function topic4() {
+    var jWidth = 1400;
+    var jHeight = 600;
+
+    var margin = {top: 20, right: 10, bottom: 30, left: 80};
+    var width = jWidth - 200 - margin.left - margin.right;
+    var height = jHeight - margin.top - margin.bottom;
+    var chartMargin = {left: 100, bottom: 20};
+
+    $('#topic-word-distribution-4').html('');
+
+    var svg = d3.select('#topic-word-distribution-4').append('svg')
+        .attr('width', width + margin.left + margin.right + chartMargin.left + 40)
+        .attr('height', height + margin.bottom + margin.top + chartMargin.bottom + 40);
+
+    // var startpos = (margin.left + (width / 2) - 300);
+    var startpos = margin.left + 50;
+
+    // % Axis
+    var extent = [0, 0.08];
+    var scale = d3.scale.linear().range([0, (width / 2) + 230]).domain(extent);
+    var axis = d3.svg.axis().scale(scale).orient('top');
+    var axisSvg = svg.append('g')
+      .attr('class', 'axis')
+      .attr('transform', 'translate(' + startpos + ', ' + (margin.top + 50) + ')')
+      .call(axis);
+
+    var words = [
+        ['trump', 0.065],
+        ['donald', 0.017],
+        ['wall', 0.012],
+        ['hillary', 0.012],
+        ['america', 0.011],
+        ['will', 0.010],
+        ['says', 0.009],
+        ['great', 0.009],
+        ['like', 0.008],
+        ['make', 0.007],
+    ];
+
+    // Words
+    svg.selectAll('.topic-word')
+        .data(words)
+        .enter()
+        .append('text')
+        .attr('x', margin.left - 50)
+        .attr('y', (d, i) => (margin.top + 90) + (i * 40))
+        .attr('class', 'topic-word')
+        .attr('opacity', 1)
+        .text(d => d[0]);
+
+    // Background
+    var bk = svg.selectAll('.topic-word-bk')
+        .data(words)
+        .enter()
+        .append('rect')
+        .attr('class', 'topic-word-bk')
+        .attr('x', startpos)
+        .attr('y', (d, i) => (margin.top + 70) + (i * 40))
+        .attr('width', (width / 2) + 230)
+        .attr('height', 21)
+        .attr('opacity', 1);
+
+    // Probabilities
+    var imp = svg.selectAll('.topic-word-prob')
+        .data(words)
+        .enter()
+        .append('rect')
+        .attr('class', 'topic-word-prob')
+        .attr('x', startpos)
+        .attr('y', (d, i) => (margin.top + 70) + (i * 40) + 7)
+        .attr('width', 0)
+        .attr('height', 7)
+        .attr('opacity', 0);
+
+    function showProbabilities() {
+        imp.transition()
+            .duration(400)
+            .delay((d, i) => i * 40)
+            .attr('width', d => scale(d[1]))
+            .attr('opacity', 1);
+    }
+
+    var fnStack = [showProbabilities];
+    $(document).keypress(function(e) {
+        if (e.which === 109) {
+            if (fnStack.length > 0) fnStack.shift()();
+        }
+    });
+}
+
+function memeTopicDistribution() {
+    var jWidth = 1400;
+    var jHeight = 600;
+
+    var margin = {top: 20, right: 10, bottom: 30, left: 80};
+    var width = jWidth - 200 - margin.left - margin.right;
+    var height = jHeight - margin.top - margin.bottom;
+    var chartMargin = {left: 100, bottom: 20};
+
+    $('#meme-topic-distribution').html('');
+
+    var svg = d3.select('#meme-topic-distribution').append('svg')
+        .attr('width', width + margin.left + margin.right + chartMargin.left + 40)
+        .attr('height', height + margin.bottom + margin.top + chartMargin.bottom + 40);
+
+    var hillaryTopicText = svg.append('text')
+        .attr('x', 1130)
+        .attr('y', 150)
+        .text('');
+    var trumpTopicText = svg.append('text')
+        .attr('x', 1130)
+        .attr('y', 455)
+        .text('');
+
+    var topicDistribution = {
+      hillary: [
+        ['topic18', 0.37],
+        ['topic13', 0.317421],
+        ['topic19', 0.152813],
+        ['topic11', 0.103851],
+        ['topic15', 0.09],
+        ['topic14', 0.04],
+        ['topic12', 0.03],
+      ],
+      trump: [
+        ['topic4', 0.475],
+        ['topic3', 0.28],
+        ['topic0', 0.15],
+        ['topic6', 0.09],
+        ['topic7', 0.05]],
+    };
+
+    var colors = {
+        hillary: d3.scale.linear().domain([0, topicDistribution.hillary.length]).range(['#fff', '#0057b8']),
+        trump: d3.scale.linear().domain([0, topicDistribution.trump.length]).range(['#fff', '#e4002b']),
+    };
+
+    var tau = 2 * Math.PI;
+
+    var arc = d3.svg.arc()
+        .innerRadius(95)
+        .outerRadius(140)
+        .startAngle(0);
+
+    function addBackground(center, x, y) {
+      var g = svg.append("g").attr("transform", "translate(" + x + "," + y + ")");
+      var background1 = g.append("path")
+        .datum({endAngle: tau})
+        .style("fill", "#ddd")
+        .attr("d", arc);
+      return g;
+    }
+
+    function addArcs(candidate, group) {
+      var data = topicDistribution[candidate];
+      var data_reverse = data.slice().reverse();
+      var topic_arcs = [];
+      data_reverse.forEach((d, i) => {
+        var topic_arc = group.append('path')
+          .attr('id', d[0])
+          .datum({endAngle: 0 * tau})
+          .style('fill', colors[candidate](i + 1))
+          .attr('d', arc);
+        topic_arcs.push(topic_arc);
+      });
+      topic_arcs.reverse();
+      return topic_arcs;
+    }
+
+    var startx = 950;
+    var hillaryBg = addBackground(250, startx, 150);
+    var trumpBg = addBackground(750, startx, 450);
+
+    var hillaryArcs = addArcs('hillary', hillaryBg);
+    var trumpArcs = addArcs('trump', trumpBg);
+
+    function showTopic(topicArcs, candidate, i) {
+      var angle = d3.sum(topicDistribution[candidate], (d, j) => {
+        if (j <= i) return d[1];
+        return 0;
+      });
+      topicArcs[i].transition()
+        .duration(200)
+        .attrTween('d', arcTween(angle * tau, arc));
+    }
+
+    function animateHillary() {
+      setTimeout(() => showTopic(hillaryArcs, 'hillary', 0), 0);
+      setTimeout(() => showTopic(hillaryArcs, 'hillary', 1), 200);
+      setTimeout(() => showTopic(hillaryArcs, 'hillary', 2), 400);
+      setTimeout(() => showTopic(hillaryArcs, 'hillary', 3), 600);
+      setTimeout(() => showTopic(hillaryArcs, 'hillary', 4), 800);
+      setTimeout(() => showTopic(hillaryArcs, 'hillary', 5), 1000);
+      setTimeout(() => showTopic(hillaryArcs, 'hillary', 6), 1200);
+      setTimeout(() => showTopic(hillaryArcs, 'hillary', 7), 1400);
+    }
+
+    function animateTrump() {
+      setTimeout(() => showTopic(trumpArcs, 'trump', 0), 0);
+      setTimeout(() => showTopic(trumpArcs, 'trump', 1), 200);
+      setTimeout(() => showTopic(trumpArcs, 'trump', 2), 400);
+      setTimeout(() => showTopic(trumpArcs, 'trump', 3), 600);
+      setTimeout(() => showTopic(trumpArcs, 'trump', 4), 800);
+    }
+
+    function animate() {
+      animateHillary();
+      animateTrump();
+    }
+
+    function unhighlightArc(arcs, i) {
+        arcs[i].transition()
+            .duration(400)
+            .attr('stroke-width', 0);
+    }
+
+    function highlightArc(arcs, i) {
+        arcs[i].transition()
+            .duration(400)
+            .attr('stroke-opacity', 0.6)
+            .attr('stroke', 'black')
+            .attr('stroke-width', 3);
+    }
+
+    var fnStack = [
+        animate,
+        () => {
+            hillaryTopicText.text('topic18');
+            highlightArc(hillaryArcs, 0);
+        },
+        () => {
+            hillaryTopicText.text('topic13');
+            highlightArc(hillaryArcs, 1);
+            unhighlightArc(hillaryArcs, 0);
+        },
+        () => {
+            hillaryTopicText.text('');
+            trumpTopicText.text('topic4');
+            highlightArc(trumpArcs, 0),
+            unhighlightArc(hillaryArcs, 1);
+        },
+    ];
+    $(document).keypress(function(e) {
+        if (e.which === 109) {
+          if (fnStack.length > 0) fnStack.shift()();
+        }
+    });
+}
+
+function likesOverTopic4() {
     var jWidth = 1400;
     var jHeight = 400;
 
@@ -376,7 +714,7 @@ function likesOverTopic9() {
         .attr('x', 75)
         .attr('y', height + chartMargin.bottom + 50)
         .attr('class', 'axis-label')
-        .text('Percentage of Topic 9 in meme');
+        .text('Percentage of Topic 4 in meme');
     svg.append('text')
         .attr('class', 'axis-label')
         .attr('transform', 'rotate(-90) translate(-' + (height + 25) + ', 35)')
@@ -449,4 +787,14 @@ function formatPrefix(precision) {
         const scaled = prefix.scale(d);
         return d3.round(scaled, precision || 0) + prefix.symbol;
     };
+}
+
+function arcTween(newAngle, arc) {
+  return function(d) {
+    var interpolate = d3.interpolate(d.endAngle, newAngle);
+    return function(t) {
+      d.endAngle = interpolate(t);
+      return arc(d);
+    };
+  };
 }

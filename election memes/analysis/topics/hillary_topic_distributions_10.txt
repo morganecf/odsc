@@ -1,0 +1,119 @@
+Topic 0
+   b'"clinton"' 0.040
+   b'"trump"' 0.030
+   b'"hillary"' 0.026
+   b'"news"' 0.021
+   b'"debate"' 0.019
+   b'"cnn"' 0.016
+   b'"live"' 0.012
+   b'"donald"' 0.010
+   b'"breaking"' 0.008
+   b'"presidential"' 0.008
+
+Topic 1
+   b'"hillary"' 0.023
+   b'"clinton"' 0.023
+   b'"trump"' 0.008
+   b'"says"' 0.006
+   b'"will"' 0.006
+   b'"people"' 0.006
+   b'"000"' 0.005
+   b'"bill"' 0.005
+   b'"com"' 0.005
+   b'"women"' 0.005
+
+Topic 2
+   b'"hillary"' 0.060
+   b'"trump"' 0.035
+   b'"clinton"' 0.021
+   b'"will"' 0.021
+   b'"donald"' 0.011
+   b'"like"' 0.010
+   b'"america"' 0.009
+   b'"ago"' 0.008
+   b'"president"' 0.007
+   b'"information"' 0.006
+
+Topic 3
+   b'"hillary"' 0.035
+   b'"trump"' 0.029
+   b'"save"' 0.021
+   b'"donald"' 0.018
+   b'"clinton"' 0.016
+   b'"ago"' 0.015
+   b'"report"' 0.013
+   b'"hours"' 0.013
+   b'"comments"' 0.011
+   b'"gold"' 0.009
+
+Topic 4
+   b'"hillary"' 0.030
+   b'"clinton"' 0.014
+   b'"obama"' 0.007
+   b'"barack"' 0.007
+   b'"deleted"' 0.006
+   b'"bill"' 0.006
+   b'"11"' 0.005
+   b'"emails"' 0.005
+   b'"live"' 0.004
+   b'"now"' 0.004
+
+Topic 5
+   b'"hillary"' 0.059
+   b'"clinton"' 0.041
+   b'"trump"' 0.030
+   b'"donald"' 0.018
+   b'"2016"' 0.015
+   b'"bernie"' 0.011
+   b'"pm"' 0.010
+   b'"retweets"' 0.009
+   b'"issues"' 0.009
+   b'"issue"' 0.008
+
+Topic 6
+   b'"16"' 0.020
+   b'"anonymous"' 0.016
+   b'"hillary"' 0.013
+   b'"id"' 0.012
+   b'"10"' 0.012
+   b'"clinton"' 0.008
+   b'"can"' 0.008
+   b'"kb"' 0.007
+   b'"00"' 0.006
+   b'"09"' 0.006
+
+Topic 7
+   b'"like"' 0.027
+   b'"reply"' 0.018
+   b'"hillary"' 0.012
+   b'"just"' 0.009
+   b'"ago"' 0.008
+   b'"comment"' 0.007
+   b'"hrs"' 0.006
+   b'"share"' 0.006
+   b'"can"' 0.006
+   b'"one"' 0.006
+
+Topic 8
+   b'"hillary"' 0.039
+   b'"clinton"' 0.013
+   b'"obama"' 0.010
+   b'"bill"' 0.009
+   b'"trump"' 0.007
+   b'"don"' 0.007
+   b'"com"' 0.007
+   b'"black"' 0.006
+   b'"people"' 0.006
+   b'"president"' 0.005
+
+Topic 9
+   b'"hillary"' 0.036
+   b'"trump"' 0.021
+   b'"clinton"' 0.014
+   b'"vote"' 0.010
+   b'"know"' 0.008
+   b'"will"' 0.008
+   b'"just"' 0.007
+   b'"re"' 0.007
+   b'"don"' 0.006
+   b'"can"' 0.006

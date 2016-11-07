@@ -1,0 +1,119 @@
+Topic 0
+   b'"omar"' 0.009
+   b'"rally"' 0.006
+   b'"de"' 0.005
+   b'"michael"' 0.005
+   b'"holding"' 0.004
+   b'"first"' 0.004
+   b'"niagara"' 0.003
+   b'"trumi"' 0.003
+   b'"donald"' 0.003
+   b'"scott"' 0.003
+
+Topic 1
+   b'"trump"' 0.065
+   b'"donald"' 0.017
+   b'"wall"' 0.012
+   b'"hillary"' 0.012
+   b'"america"' 0.011
+   b'"will"' 0.010
+   b'"says"' 0.009
+   b'"re"' 0.009
+   b'"like"' 0.008
+   b'"make"' 0.007
+
+Topic 2
+   b'"trump"' 0.104
+   b'"hillary"' 0.053
+   b'"clinton"' 0.037
+   b'"donald"' 0.025
+   b'"vote"' 0.013
+   b'"obama"' 0.011
+   b'"president"' 0.010
+   b'"taxes"' 0.007
+   b'"bill"' 0.006
+   b'"george"' 0.005
+
+Topic 3
+   b'"like"' 0.026
+   b'"trump"' 0.018
+   b'"just"' 0.010
+   b'"reply"' 0.009
+   b'"can"' 0.009
+   b'"people"' 0.009
+   b'"don"' 0.008
+   b'"re"' 0.007
+   b'"get"' 0.006
+   b'"know"' 0.006
+
+Topic 4
+   b'"trump"' 0.050
+   b'"donald"' 0.019
+   b'"will"' 0.010
+   b'"can"' 0.009
+   b'"people"' 0.008
+   b'"president"' 0.008
+   b'"like"' 0.008
+   b'"2016"' 0.006
+   b'"hillary"' 0.005
+   b'"wins"' 0.005
+
+Topic 5
+   b'"ago"' 0.039
+   b'"hours"' 0.018
+   b'"save"' 0.016
+   b'"comments"' 0.014
+   b'"reply"' 0.013
+   b'"report"' 0.010
+   b'"points"' 0.010
+   b'"give"' 0.010
+   b'"gold"' 0.008
+   b'"minutes"' 0.008
+
+Topic 6
+   b'"el"' 0.006
+   b'"de"' 0.005
+   b'"que"' 0.004
+   b'"prison"' 0.004
+   b'"said"' 0.003
+   b'"onald"' 0.003
+   b'"court"' 0.003
+   b'"chapo"' 0.003
+   b'"donald"' 0.003
+   b'"la"' 0.003
+
+Topic 7
+   b'"trump"' 0.071
+   b'"donald"' 0.015
+   b'"news"' 0.013
+   b'"com"' 0.009
+   b'"clinton"' 0.009
+   b'"cnn"' 0.008
+   b'"debate"' 0.008
+   b'"live"' 0.008
+   b'"new"' 0.007
+   b'"2016"' 0.005
+
+Topic 8
+   b'"16"' 0.034
+   b'"pm"' 0.029
+   b'"trump"' 0.023
+   b'"10"' 0.020
+   b'"anonymous"' 0.016
+   b'"12"' 0.015
+   b'"retweets"' 0.013
+   b'"11"' 0.013
+   b'"likes"' 0.012
+   b'"15"' 0.011
+
+Topic 9
+   b'"trump"' 0.060
+   b'"2016"' 0.010
+   b'"donald"' 0.010
+   b'"know"' 0.010
+   b'"putin"' 0.007
+   b'"bush"' 0.007
+   b'"hes"' 0.006
+   b'"george"' 0.006
+   b'"running"' 0.005
+   b'"ya"' 0.005

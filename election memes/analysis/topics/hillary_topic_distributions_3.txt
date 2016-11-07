@@ -1,0 +1,103 @@
+Topic 0
+   "hillary" 0.032
+   "like" 0.013
+   "clinton" 0.012
+   "trump" 0.011
+   "just" 0.009
+   "bernie" 0.008
+   "can" 0.007
+   "people" 0.006
+   "don" 0.006
+   "will" 0.005
+
+Topic 1
+   "hillary" 0.057
+   "clinton" 0.030
+   "trump" 0.019
+   "will" 0.009
+   "people" 0.008
+   "re" 0.007
+   "information" 0.007
+   "bill" 0.007
+   "president" 0.005
+   "donald" 0.005
+
+Topic 2
+   "clinton" 0.026
+   "hillary" 0.022
+   "news" 0.019
+   "trump" 0.019
+   "debate" 0.015
+   "cnn" 0.013
+   "live" 0.012
+   "says" 0.012
+   "2016" 0.010
+   "presidential" 0.009
+
+Topic 3
+   "ago" 0.018
+   "hillary" 0.017
+   "hours" 0.015
+   "save" 0.014
+   "report" 0.009
+   "comments" 0.009
+   "points" 0.009
+   "com" 0.009
+   "can" 0.008
+   "give" 0.008
+
+Topic 4
+   "hillary" 0.059
+   "clinton" 0.047
+   "trump" 0.045
+   "donald" 0.024
+   "pm" 0.016
+   "2016" 0.012
+   "retweets" 0.011
+   "vote" 0.010
+   "16" 0.009
+   "10" 0.009
+
+Topic 5
+   "hillary" 0.040
+   "clinton" 0.011
+   "trump" 0.010
+   "2016" 0.006
+   "release" 0.006
+   "may" 0.005
+   "lies" 0.005
+   "000" 0.005
+   "death" 0.004
+   "donald" 0.004
+
+Topic 6
+   "like" 0.028
+   "reply" 0.022
+   "16" 0.020
+   "anonymous" 0.015
+   "id" 0.012
+   "10" 0.011
+   "ago" 0.010
+   "hrs" 0.008
+   "kb" 0.007
+   "mins" 0.007
+
+Topic 7
+   "hillary" 0.060
+   "trump" 0.034
+   "clinton" 0.030
+   "donald" 0.017
+   "com" 0.013
+   "bill" 0.012
+   "two" 0.009
+   "cons" 0.008
+   "pros" 0.008
+   "us" 0.007
+
+Topic 8
+   "hillary" 0.010
+   "usa" 0.005
+   "elsa" 0.004
+   "get" 0.004
+   "country" 0.004
+   Traceback (most recent call last):

@@ -1,0 +1,119 @@
+Topic 0
+   b'"hillary"' 0.057
+   b'"clinton"' 0.032
+   b'"trump"' 0.017
+   b'"bernie"' 0.017
+   b'"vote"' 0.011
+   b'"issues"' 0.009
+   b'"matter"' 0.009
+   b'"issue"' 0.008
+   b'"compare"' 0.008
+   b'"informed"' 0.008
+
+Topic 1
+   b'"hillary"' 0.054
+   b'"clinton"' 0.020
+   b'"information"' 0.012
+   b'"will"' 0.009
+   b'"arrest"' 0.008
+   b'"lead"' 0.008
+   b'"com"' 0.007
+   b'"wikileaks"' 0.005
+   b'"2016"' 0.004
+   b'"th"' 0.004
+
+Topic 2
+   b'"like"' 0.024
+   b'"hillary"' 0.014
+   b'"reply"' 0.011
+   b'"just"' 0.010
+   b'"people"' 0.009
+   b'"don"' 0.008
+   b'"will"' 0.007
+   b'"clinton"' 0.007
+   b'"know"' 0.006
+   b'"ago"' 0.006
+
+Topic 3
+   b'"16"' 0.028
+   b'"hillary"' 0.022
+   b'"trump"' 0.020
+   b'"10"' 0.016
+   b'"clinton"' 0.016
+   b'"anonymous"' 0.014
+   b'"pm"' 0.011
+   b'"id"' 0.011
+   b'"donald"' 0.007
+   b'"kb"' 0.007
+
+Topic 4
+   b'"day"' 0.008
+   b'"clinton"' 0.008
+   b'"hillary"' 0.006
+   b'"presidents"' 0.006
+   b'"news"' 0.005
+   b'"paul"' 0.005
+   b'"year"' 0.004
+   b'"asked"' 0.004
+   b'"10"' 0.004
+   b'"16"' 0.004
+
+Topic 5
+   b'"trump"' 0.047
+   b'"hillary"' 0.046
+   b'"clinton"' 0.024
+   b'"donald"' 0.014
+   b'"obama"' 0.010
+   b'"president"' 0.010
+   b'"will"' 0.010
+   b'"says"' 0.009
+   b'"2016"' 0.008
+   b'"debate"' 0.007
+
+Topic 6
+   b'"hillary"' 0.049
+   b'"clinton"' 0.027
+   b'"trump"' 0.015
+   b'"donald"' 0.009
+   b'"taxes"' 0.008
+   b'"com"' 0.008
+   b'"youtube"' 0.006
+   b'"2016"' 0.006
+   b'"likes"' 0.005
+   b'"follow"' 0.005
+
+Topic 7
+   b'"hillary"' 0.046
+   b'"clinton"' 0.045
+   b'"trump"' 0.041
+   b'"bill"' 0.018
+   b'"donald"' 0.018
+   b'"news"' 0.011
+   b'"cnn"' 0.011
+   b'"debate"' 0.010
+   b'"live"' 0.008
+   b'"cons"' 0.007
+
+Topic 8
+   b'"hillary"' 0.021
+   b'"trump"' 0.018
+   b'"clinton"' 0.015
+   b'"ago"' 0.013
+   b'"save"' 0.013
+   b'"hours"' 0.011
+   b'"comments"' 0.009
+   b'"report"' 0.009
+   b'"donald"' 0.008
+   b'"points"' 0.008
+
+Topic 9
+   b'"hillary"' 0.030
+   b'"can"' 0.012
+   b'"com"' 0.011
+   b'"clinton"' 0.010
+   b'"000"' 0.009
+   b'"will"' 0.006
+   b'"obama"' 0.005
+   b'"dab"' 0.005
+   b'"guns"' 0.005
+   b'"fuck"' 0.004

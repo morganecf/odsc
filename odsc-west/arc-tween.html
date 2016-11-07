@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<style>
+  #wall-of-fame {
+    position: absolute;
+    margin-left: -700px;
+    margin-top: 150px;
+  }
+  #trump-face {
+    border-radius: 100%;
+    width: 350px;
+    height: 350px;
+  }
+</style>
+
+<body>
+  <div>
+    <svg width="960" height="500"></svg>
+    <img id="wall-of-fame" src="memes/wall-of-fame.png" width="">
+    <img id="trump-face" src="memes/trump face.png" width="">
+  </div>
+</body>
+
+<script src="js/d3.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script>
+
+var topicDistribution = {
+  hillary: [['topic18', 0.37], ['topic13', 0.317421], ['topic19', 0.152813], ['topic11', 0.103851]],
+  trump: [['topic4', 0.475], ['topic3', 0.28], ['topic0', 0.2], ['topic6', 0.0951], ['topic7', 0.098]],
+};
+
+var colors = {
+  hillary: ['#3A539B', '#4B77BE', '#6C7A89', '#95A5A6'],
+  trump: ['#D35400', '#E67E22', '#F89406', '#FDE3A7', '#F5AB35'],
+};
+
+var tau = 2 * Math.PI; // http://tauday.com/tau-manifesto
+
+// An arc function with all values bound except the endAngle. So, to compute an
+// SVG path string for a given angle, we pass an object with an endAngle
+// property to the `arc` function, and it will return the corresponding string.
+var arc = d3.svg.arc()
+    .innerRadius(150)
+    .outerRadius(200)
+    .startAngle(0);
+
+// Get the SVG container, and apply a transform such that the origin is the
+// center of the canvas. This way, we don’t need to position arcs individually.
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+
+function addBackground(center) {
+  var g = svg.append("g").attr("transform", "translate(" + center + "," + (height / 2) + ")");
+  var background1 = g.append("path")
+    .datum({endAngle: tau})
+    .style("fill", "#ddd")
+    .attr("d", arc);
+  return g;
+}
+
+function addArcs(candidate, group) {
+  var data = topicDistribution[candidate];
+  var data_reverse = data.slice().reverse();
+  var topic_arcs = [];
+  data_reverse.forEach((d, i) => {
+    var topic_arc = group.append('path')
+      .attr('id', d[0])
+      .datum({endAngle: 0 * tau})
+      .style('fill', colors[candidate][i])
+      .attr('d', arc);
+    topic_arcs.push(topic_arc);
+  });
+  topic_arcs.reverse();
+  return topic_arcs;
+}
+
+var hillaryBg = addBackground(250);
+var trumpBg = addBackground(750);
+
+var hillaryArcs = addArcs('hillary', hillaryBg);
+var trumpArcs = addArcs('trump', trumpBg);
+
+function showTopic(topicArcs, candidate, i) {
+  var angle = d3.sum(topicDistribution[candidate], (d, j) => {
+    if (j <= i) return d[1];
+    return 0;
+  });
+  topicArcs[i].transition()
+    .duration(400)
+    .attrTween('d', arcTween(angle * tau));
+}
+
+function animateHillary() {
+  setTimeout(() => showTopic(hillaryArcs, 'hillary', 0), 0);
+  setTimeout(() => showTopic(hillaryArcs, 'hillary', 1), 300);
+  setTimeout(() => showTopic(hillaryArcs, 'hillary', 2), 700);
+  setTimeout(() => showTopic(hillaryArcs, 'hillary', 3), 1000);
+}
+
+function animateTrump() {
+  setTimeout(() => showTopic(trumpArcs, 'trump', 0), 0);
+  setTimeout(() => showTopic(trumpArcs, 'trump', 1), 300);
+  setTimeout(() => showTopic(trumpArcs, 'trump', 2), 700);
+  setTimeout(() => showTopic(trumpArcs, 'trump', 3), 1000);
+}
+
+function animate() {
+  animateHillary();
+  animateTrump();
+}
+
+var fnStack = [animate];
+$(document).keypress(function(e) {
+    if (e.which === 109) {
+      if (fnStack.length > 0) fnStack.shift()();
+    }
+});
+
+// Add the foreground arcs as percentage of whole
+
+
+// Every so often, start a transition to a new random angle. The attrTween
+// definition is encapsulated in a separate function (a closure) below.
+// d3.interval(function() {
+//   foreground.transition()
+//       .duration(750)
+//       .attrTween("d", arcTween(Math.random() * tau));
+// }, 1500);
+
+// Returns a tween for a transition’s "d" attribute, transitioning any selected
+// arcs from their current angle to the specified new angle.
+function arcTween(newAngle) {
+
+  // The function passed to attrTween is invoked for each selected element when
+  // the transition starts, and for each element returns the interpolator to use
+  // over the course of transition. This function is thus responsible for
+  // determining the starting angle of the transition (which is pulled from the
+  // element’s bound datum, d.endAngle), and the ending angle (simply the
+  // newAngle argument to the enclosing function).
+  return function(d) {
+
+    // To interpolate between the two angles, we use the default d3.interpolate.
+    // (Internally, this maps to d3.interpolateNumber, since both of the
+    // arguments to d3.interpolate are numbers.) The returned function takes a
+    // single argument t and returns a number between the starting angle and the
+    // ending angle. When t = 0, it returns d.endAngle; when t = 1, it returns
+    // newAngle; and for 0 < t < 1 it returns an angle in-between.
+    var interpolate = d3.interpolate(d.endAngle, newAngle);
+
+    // The return value of the attrTween is also a function: the function that
+    // we want to run for each tick of the transition. Because we used
+    // attrTween("d"), the return value of this last function will be set to the
+    // "d" attribute at every tick. (It’s also possible to use transition.tween
+    // to run arbitrary code for every tick, say if you want to set multiple
+    // attributes from a single function.) The argument t ranges from 0, at the
+    // start of the transition, to 1, at the end.
+    return function(t) {
+
+      // Calculate the current arc angle based on the transition time, t. Since
+      // the t for the transition and the t for the interpolate both range from
+      // 0 to 1, we can pass t directly to the interpolator.
+      //
+      // Note that the interpolated angle is written into the element’s bound
+      // data object! This is important: it means that if the transition were
+      // interrupted, the data bound to the element would still be consistent
+      // with its appearance. Whenever we start a new arc transition, the
+      // correct starting angle can be inferred from the data.
+      d.endAngle = interpolate(t);
+
+      // Lastly, compute the arc path given the updated data! In effect, this
+      // transition uses data-space interpolation: the data is interpolated
+      // (that is, the end angle) rather than the path string itself.
+      // Interpolating the angles in polar coordinates, rather than the raw path
+      // string, produces valid intermediate arcs during the transition.
+      return arc(d);
+    };
+  };
+}
+
+</script>

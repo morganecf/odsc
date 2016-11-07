@@ -386,7 +386,7 @@ function pdMatrix() {
       .duration(300)
       .delay((d, i) => (i / 20) * 300)
       .attr('opacity', 1);
-    svg1.selectAll('.col .col-5')
+    svg1.selectAll('.col-5')
       .transition()
       .duration(300)
       .delay((d, i) => (i / 20) * 300)

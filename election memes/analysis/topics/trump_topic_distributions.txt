@@ -1,0 +1,119 @@
+Topic 0
+   "trump" 0.022
+   "t" 0.012
+   "15" 0.011
+   "pm" 0.011
+   "7" 0.010
+   "12" 0.008
+   "steve" 0.008
+   "donald" 0.007
+   "people" 0.007
+   "11" 0.007
+
+Topic 1
+   "trump" 0.037
+   "melania" 0.010
+   "obama" 0.007
+   "de" 0.005
+   "donald" 0.005
+   "barack" 0.005
+   "tap" 0.005
+   "double" 0.004
+   "ap" 0.004
+   "michelle" 0.004
+
+Topic 2
+   "16" 0.025
+   "anonymous" 0.024
+   "id" 0.017
+   "fuck" 0.012
+   "kb" 0.010
+   "10" 0.010
+   "file" 0.008
+   "05" 0.007
+   "09" 0.007
+   "op" 0.006
+
+Topic 3
+   "trump" 0.038
+   "s" 0.029
+   "t" 0.014
+   "hillary" 0.012
+   "donald" 0.010
+   "people" 0.009
+   "said" 0.008
+   "democrats" 0.007
+   "white" 0.005
+   "occupy" 0.005
+
+Topic 4
+   "trump" 0.081
+   "s" 0.016
+   "t" 0.014
+   "will" 0.012
+   "donald" 0.012
+   "can" 0.011
+   "women" 0.009
+   "m" 0.008
+   "re" 0.008
+   "president" 0.006
+
+Topic 5
+   "trump" 0.009
+   "usa" 0.005
+   "kinda" 0.004
+   "looks" 0.004
+   "one" 0.004
+   "er" 0.003
+   "michael" 0.003
+   "16p" 0.003
+   "turtle" 0.003
+   "like" 0.003
+
+Topic 6
+   "like" 0.035
+   "trump" 0.019
+   "t" 0.017
+   "s" 0.016
+   "reply" 0.015
+   "just" 0.009
+   "1" 0.009
+   "people" 0.009
+   "know" 0.008
+   "2" 0.008
+
+Topic 7
+   "ago" 0.023
+   "trump" 0.017
+   "hours" 0.012
+   "1" 0.011
+   "r" 0.011
+   "save" 0.010
+   "e" 0.010
+   "donald" 0.009
+   "com" 0.009
+   "c" 0.008
+
+Topic 8
+   "trump" 0.079
+   "hillary" 0.032
+   "clinton" 0.019
+   "donald" 0.012
+   "vote" 0.012
+   "s" 0.011
+   "voting" 0.010
+   "president" 0.009
+   "america" 0.008
+   "us" 0.007
+
+Topic 9
+   "trump" 0.056
+   "pm" 0.017
+   "donald" 0.016
+   "clinton" 0.015
+   "news" 0.012
+   "2016" 0.012
+   "9" 0.010
+   "s" 0.010
+   "16" 0.010
+   "hillary" 0.009

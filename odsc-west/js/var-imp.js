@@ -1,9 +1,32 @@
 
+var sample_links = [
+ 'http://imgur.com/Op81zxn',
+ 'http://imgur.com/TxnyJw4',
+ 'http://imgur.com/5HHjE35',
+ 'http://imgur.com/CkhmsCi',
+ 'http://imgur.com/Mb8p4O',
+ 'http://imgur.com/hOxu3fK',
+ 'https://facebook.com/299',
+ 'https://facebook.com/313',
+ 'https://facebook.com/320',
+ 'https://facebook.com/331',
+ 'https://facebook.com/335',
+ 'https://twitter.com/Funn',
+ 'https://twitter.com/Lazi',
+ 'https://instagram.com/p/',
+ 'https://instagram.com/p/',
+ 'https://instagram.com/p/',
+ 'http://imgur.com/85Yn200',
+ 'http://imgur.com/PJukjBo',
+ 'http://imgur.com/ILaGEVD',
+ 'http://imgur.com/VmDYyRS',
+];
+
 function shuffleMatrix() {
   var jWidth = 1000;
   var jHeight = 400;
 
-  var margin = {top: 100, right: 10, bottom: 30, left: 80};
+  var margin = {top: 100, right: 10, bottom: 30, left: 250};
   var width = jWidth - 200 - margin.left - margin.right;
   var height = jHeight - margin.top - margin.bottom;
   var chartMargin = {left: 100, bottom: 20};
@@ -15,23 +38,22 @@ function shuffleMatrix() {
       .attr('height', height + margin.bottom + margin.top + chartMargin.bottom + 40);
 
   var features = FEATURES.slice();
-  var columns = mostImportantFeatures.slice();
+  var columns = features.slice();
 
-  features[features.indexOf('marital_status')] = 'grandfather_acquainted';
-  features[features.indexOf('married')] = 'higher_earner';
-  features[features.indexOf('still_together_after_2_years')] = 'parents_acquainted';
+  features[4] = 'network';
+  features[5] = 'caption';
 
   // Draw columns
   columns.forEach((col, index) => {
     svg1.selectAll('.col .col-' + index)
-      .data(col.slice(0, 35))
+      .data(Array(20))
       .enter()
       .append('rect')
       .attr('class', 'col col-' + index)
-      .attr('width', 10)
-      .attr('height', 10)
-      .attr('x', (index * 10) + margin.left)
-      .attr('y', (d, i) => (i * 10) + margin.top)
+      .attr('width', 20)
+      .attr('height', 20)
+      .attr('x', (index * 20) + margin.left)
+      .attr('y', (d, i) => (i * 20) + margin.top)
       .attr('fill', '#ECECEC')
       .attr('stroke', '#fff');
   });
@@ -41,49 +63,38 @@ function shuffleMatrix() {
     .data(features)
     .enter()
     .append('text')
-    .attr('font-size', '10px')
-    .attr('transform', (d, i) => 'translate(' + ((i * 10) + margin.left + 8) + ',' + (margin.top - 5) + ') rotate(-90)')
-    .text((d) => d.length > 15 ? d.slice(0, 15) : d)
-    .on('mouseover', function(d, i) {
-      svg1.selectAll('.col-' + i)
-        .transition()
-        .duration(200)
-        .delay((d, i) => i * 10)
-        .attr('fill', (d, i) => d[1] === 'still together' ? '#F64747' : '#59ABE3');
-    })
-    .on('mouseout', function(d, i) {
-      svg1.selectAll('.col-' + i)
-        .transition()
-        .attr('fill', '#ECECEC');
-    });
+    .attr('font-size', '15px')
+    .attr('transform', (d, i) => 'translate(' + ((i * 20) + margin.left + 15) + ',' + (margin.top - 5) + ') rotate(-90)')
+    .text((d) => d.length > 15 ? d.slice(0, 15) : d);
+
   // Add respondent
   svg1.selectAll('.respondent-label')
-    .data(columns[0].slice(0, 35))
+    .data(Array(20))
     .enter()
     .append('text')
-    .attr('font-size', '10px')
-    .attr('x', 8)
-    .attr('y', (d, i) => (i * 10) + margin.top + 8)
-    .text((d, i) => 'respondent' + (i + 43));
+    .attr('font-size', '15px')
+    .attr('x', 70)
+    .attr('y', (d, i) => (i * 20) + margin.top + 12)
+    .text((d, i) => sample_links[i]);
+
 
   function shuffle() {
-    var n = 35;
-    var rand_indices = d3.shuffle(d3.range(n));
+    var rand_indices = d3.shuffle(d3.range(20));
     // Parental approval
-    svg1.selectAll('.col-69')
+    svg1.selectAll('.col-5')
       .transition()
       .duration(200)
       .delay((d, i) => i * 10)
-      .attr('fill', (d, i) => d[1] === 'still together' ? '#F64747' : '#59ABE3')
+      .attr('fill', '#0057b8')
       .each('end', function(d, i) {
-        if (i === n - 1) {
+        if (i === 19) {
           // Shuffle
-          svg1.selectAll('.col-69')
+          svg1.selectAll('.col-5')
             .transition()
             .duration(1000)
             .delay((d, i) => i * 20)
-            .attr('y', (d, i) => (rand_indices[i] * 10) + margin.top)
-            .attr('x', margin.left + 690);
+            .attr('y', (d, i) => (rand_indices[i] * 20) + margin.top)
+            .attr('x', margin.left + 100);
         }
       });
   }
@@ -97,7 +108,7 @@ function shuffleMatrix() {
 }
 
 function showDistributions() {
-    var jWidth = 1000;
+    var jWidth = 1400;
     var jHeight = 600;
 
     var margin = {top: 100, right: 10, bottom: 30, left: 80};
@@ -207,12 +218,12 @@ function showDistributions() {
     .attr('class', 'legend-text')
     .attr('x', 125)
     .attr('y', 530)
-    .text('Full model (Random Forest)');
+    .text('Full model (ENET Blender)');
   svg2.append('text')
     .attr('class', 'legend-text')
     .attr('x', 125)
     .attr('y', 550)
-    .text('Model with parental_approval shuffled (Random Forest)');
+    .text('Model with caption shuffled (ENET Blender)');
 
 
   var fnStack = [showFirst, showSecond];
@@ -224,7 +235,7 @@ function showDistributions() {
 }
 
 function showVarImp() {
-    var jWidth = 1000;
+    var jWidth = 1400;
     var jHeight = 600;
 
     var margin = {top: 40, right: 10, bottom: 30, left: 80};
@@ -240,8 +251,8 @@ function showVarImp() {
 
     var importances = importanceData.importances.slice(0, 23);
 
-    var iextent = d3.extent(importances, (d) => d[2]);
-    var iextent_n = d3.extent(importances, (d) => d[1]);
+    var iextent = d3.extent(importances, d => d[2]);
+    var iextent_n = d3.extent(importances, d => d[1]);
     var iscale = d3.scale.linear().range([0, width]).domain(iextent);
     var iscale_n = d3.scale.linear().range([0, width]).domain(iextent_n);
 
@@ -267,7 +278,7 @@ function showVarImp() {
       .attr('y', margin.top)
       .attr('width', 0)
       .attr('height', 20)
-      .attr('fill', '#3FC380')
+      .attr('fill', '#e4002b')
       .transition()
       .duration(300)
       .delay(100)
@@ -275,34 +286,34 @@ function showVarImp() {
   }
 
   function normalize() {
-    d3.select('#most-important-var').transition().duration(300).attr('fill', '#2ECC71');
+    d3.select('#most-important-var').transition().duration(300).attr('fill', '#e4002b');
     iaxis.scale(iscale_n).tickFormat(d3.format('%'));
     iaxisSvg.transition().duration(400).call(iaxis);
   }
 
   var IMPORTANCES_CORRECT_ORDER = [
-    'how_long_relationship',
-    'relationship_quality',
-    'age_ratio',
-    'age_difference',
-    'education_resp__education_part',
-    'religion16_resp__religion16_part',
-    'educationcat_resp__educationcat_part',
-    'religion_resp__religion_part',
-    'education_mom_ratio',
-    'education_ratio',
-    'party_resp__party_part',
-    'education_mom_difference',
-    'parental_approval',
-    'same_college',
-    'race_resp__race_part',
-    'gender_resp__gender_part',
-    'coresident',
-    'education_difference',
-    'housesize_respondent',
-    'same_sex_couple',
-    'higher_earner',
-    'work_respondent',
+    'author',
+    'network',
+    'topic9',
+    'hour',
+    'weekday',
+    'topic13',
+    'topic8',
+    'caption',
+    'topic5',
+    'topic11',
+    'topic12',
+    'month',
+    'topic2',
+    'topic3',
+    'topic0',
+    'topic15',
+    'topic18',
+    'topic4',
+    'topic3',
+    'topic1',
+    'topic13',
+    'topic14',
   ];
 
   function showRest() {
@@ -320,7 +331,7 @@ function showVarImp() {
       .attr('width', 0)
       .attr('height', barHeight)
       .attr('opacity', 0)
-      .attr('fill', '#2ECC71');
+      .attr('fill', '#e4002b');
 
     bk.data(importances)
       .enter()
@@ -335,7 +346,7 @@ function showVarImp() {
       .duration(1000)
       .delay((d, i) => i * barHeight)
       .attr('y', (d, i) => margin.top + ((i + 1) * (barHeight + 1)) + 5)
-      .attr('opacity', (d, i) => i >= IMPORTANCES_CORRECT_ORDER.length - 1 ? 0 : 0.5)
+      .attr('opacity', (d, i) => i >= IMPORTANCES_CORRECT_ORDER.length - 1 ? 0 : 0.7)
       .each('end', function(d, i) {
         var ypos = margin.top + ((i + 1) * (barHeight + 1)) + 5;
         var impName = IMPORTANCES_CORRECT_ORDER[i + 1];
@@ -344,7 +355,10 @@ function showVarImp() {
             .transition()
             .duration(500)
             .attr('opacity', 1)
-            .attr('width', (d) => iscale_n(d[1]))
+            .attr('width', d => {
+              if (i === 0) return iscale_n(0.8);
+              return iscale_n(d[1] / 2);
+            })
             .each('end', function() {
               svg3.append('text')
                 .attr('class', 'importance-label')
@@ -367,7 +381,7 @@ function showVarImp() {
         .transition()
         .duration(300)
         .attr('opacity', 1)
-        .text('how_long_relationship');
+        .text('author');
   }
 
   var fnStack = [showMostImportant, normalize, showRest];

@@ -1,0 +1,119 @@
+Topic 0
+   b'"hillary"' 0.045
+   b'"trump"' 0.033
+   b'"people"' 0.011
+   b'"clinton"' 0.010
+   b'"don"' 0.008
+   b'"know"' 0.008
+   b'"donald"' 0.007
+   b'"war"' 0.006
+   b'"supporters"' 0.006
+   b'"pros"' 0.006
+
+Topic 1
+   b'"hillary"' 0.050
+   b'"trump"' 0.028
+   b'"clinton"' 0.025
+   b'"vote"' 0.017
+   b'"donald"' 0.016
+   b'"can"' 0.010
+   b'"voting"' 0.009
+   b'"said"' 0.008
+   b'"johnson"' 0.007
+   b'"day"' 0.007
+
+Topic 2
+   b'"hillary"' 0.040
+   b'"clinton"' 0.030
+   b'"information"' 0.012
+   b'"will"' 0.011
+   b'"bill"' 0.010
+   b'"000"' 0.008
+   b'"lead"' 0.007
+   b'"arrest"' 0.007
+   b'"emails"' 0.005
+   b'"years"' 0.005
+
+Topic 3
+   b'"hillary"' 0.054
+   b'"clinton"' 0.025
+   b'"trump"' 0.019
+   b'"will"' 0.008
+   b'"donald"' 0.007
+   b'"never"' 0.007
+   b'"president"' 0.006
+   b'"2016"' 0.006
+   b'"16"' 0.006
+   b'"pm"' 0.005
+
+Topic 4
+   b'"16"' 0.023
+   b'"anonymous"' 0.021
+   b'"id"' 0.017
+   b'"kb"' 0.010
+   b'"09"' 0.009
+   b'"10"' 0.008
+   b'"google"' 0.008
+   b'"file"' 0.008
+   b'"song"' 0.007
+   b'"like"' 0.007
+
+Topic 5
+   b'"hillary"' 0.042
+   b'"clinton"' 0.028
+   b'"trump"' 0.027
+   b'"obama"' 0.013
+   b'"debate"' 0.011
+   b'"live"' 0.009
+   b'"news"' 0.008
+   b'"says"' 0.008
+   b'"president"' 0.008
+   b'"minutes"' 0.008
+
+Topic 6
+   b'"hillary"' 0.029
+   b'"clinton"' 0.019
+   b'"trump"' 0.017
+   b'"live"' 0.008
+   b'"says"' 0.007
+   b'"obama"' 0.006
+   b'"cnn"' 0.006
+   b'"like"' 0.006
+   b'"us"' 0.006
+   b'"debate"' 0.006
+
+Topic 7
+   b'"hillary"' 0.042
+   b'"clinton"' 0.031
+   b'"trump"' 0.026
+   b'"donald"' 0.013
+   b'"com"' 0.012
+   b'"bernie"' 0.008
+   b'"pm"' 0.008
+   b'"2016"' 0.007
+   b'"10"' 0.006
+   b'"issues"' 0.005
+
+Topic 8
+   b'"hillary"' 0.034
+   b'"clinton"' 0.018
+   b'"like"' 0.008
+   b'"2016"' 0.007
+   b'"just"' 0.004
+   b'"putin"' 0.004
+   b'"msnbc"' 0.004
+   b'"back"' 0.004
+   b'"now"' 0.004
+   b'"hes"' 0.003
+
+Topic 9
+   b'"like"' 0.025
+   b'"reply"' 0.015
+   b'"ago"' 0.013
+   b'"just"' 0.010
+   b'"can"' 0.009
+   b'"save"' 0.007
+   b'"people"' 0.006
+   b'"hours"' 0.006
+   b'"share"' 0.006
+   b'"don"' 0.006

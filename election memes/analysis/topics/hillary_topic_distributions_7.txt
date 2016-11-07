@@ -1,0 +1,59 @@
+Topic 0
+   b'"hillary"' 0.071
+   b'"clinton"' 0.030
+   b'"trump"' 0.021
+   b'"bernie"' 0.011
+   b'"donald"' 0.011
+   b'"president"' 0.008
+   b'"matter"' 0.007
+   b'"issues"' 0.006
+   b'"obama"' 0.006
+   b'"issue"' 0.006
+
+Topic 1
+   b'"hillary"' 0.042
+   b'"clinton"' 0.036
+   b'"trump"' 0.014
+   b'"2016"' 0.009
+   b'"news"' 0.008
+   b'"pm"' 0.007
+   b'"retweets"' 0.006
+   b'"bill"' 0.006
+   b'"will"' 0.006
+   b'"likes"' 0.005
+
+Topic 2
+   b'"hillary"' 0.019
+   b'"trump"' 0.018
+   b'"like"' 0.012
+   b'"clinton"' 0.007
+   b'"people"' 0.007
+   b'"reply"' 0.006
+   b'"just"' 0.006
+   b'"can"' 0.006
+   b'"will"' 0.006
+   b'"donald"' 0.006
+
+Topic 3
+   b'"hillary"' 0.025
+   b'"ago"' 0.021
+   b'"clinton"' 0.018
+   b'"hours"' 0.012
+   b'"like"' 0.010
+   b'"save"' 0.010
+   b'"trump"' 0.009
+   b'"points"' 0.007
+   b'"com"' 0.007
+   b'"report"' 0.007
+
+Topic 4
+   b'"clinton"' 0.020
+   b'"hillary"' 0.019
+   b'"16"' 0.014
+   b'"trump"' 0.014
+   b'"anonymous"' 0.010
+   b'"10"' 0.009
+   b'"id"' 0.008
+   b'"debate"' 0.007
+   b'"donald"' 0.006
+   b'"kb"' 0.005

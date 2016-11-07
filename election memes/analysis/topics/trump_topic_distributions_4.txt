@@ -1,0 +1,119 @@
+Topic 0
+   b'"16"' 0.030
+   b'"anonymous"' 0.024
+   b'"id"' 0.017
+   b'"10"' 0.014
+   b'"kb"' 0.010
+   b'"trump"' 0.010
+   b'"file"' 0.008
+   b'"05"' 0.007
+   b'"09"' 0.007
+   b'"fuck"' 0.006
+
+Topic 1
+   b'"trump"' 0.052
+   b'"pm"' 0.027
+   b'"donald"' 0.016
+   b'"2016"' 0.014
+   b'"cnn"' 0.012
+   b'"16"' 0.012
+   b'"likes"' 0.012
+   b'"news"' 0.012
+   b'"10"' 0.011
+   b'"retweets"' 0.011
+
+Topic 2
+   b'"trump"' 0.026
+   b'"know"' 0.009
+   b'"one"' 0.005
+   b'"will"' 0.005
+   b'"get"' 0.004
+   b'"knows"' 0.004
+   b'"time"' 0.004
+   b'"black"' 0.004
+   b'"police"' 0.003
+   b'"matter"' 0.003
+
+Topic 3
+   b'"trump"' 0.076
+   b'"women"' 0.015
+   b'"like"' 0.014
+   b'"donald"' 0.013
+   b'"democrats"' 0.011
+   b'"occupy"' 0.010
+   b'"can"' 0.009
+   b'"pussy"' 0.007
+   b'"president"' 0.007
+   b'"just"' 0.007
+
+Topic 4
+   b'"trump"' 0.050
+   b'"com"' 0.014
+   b'"donald"' 0.012
+   b'"putin"' 0.007
+   b'"live"' 0.007
+   b'"news"' 0.007
+   b'"wins"' 0.006
+   b'"puppet"' 0.006
+   b'"hes"' 0.005
+   b'"looks"' 0.005
+
+Topic 5
+   b'"donald"' 0.010
+   b'"teacher"' 0.010
+   b'"china"' 0.009
+   b'"biden"' 0.008
+   b'"joe"' 0.007
+   b'"masi"' 0.007
+   b'"popal"' 0.007
+   b'"gonna"' 0.006
+   b'"obama"' 0.006
+   b'"mexico"' 0.005
+
+Topic 6
+   b'"like"' 0.023
+   b'"trump"' 0.019
+   b'"reply"' 0.012
+   b'"just"' 0.010
+   b'"don"' 0.009
+   b'"people"' 0.009
+   b'"can"' 0.009
+   b'"ago"' 0.008
+   b'"know"' 0.007
+   b'"will"' 0.007
+
+Topic 7
+   b'"trump"' 0.127
+   b'"hillary"' 0.054
+   b'"clinton"' 0.029
+   b'"donald"' 0.025
+   b'"america"' 0.011
+   b'"vote"' 0.009
+   b'"re"' 0.009
+   b'"great"' 0.008
+   b'"says"' 0.008
+   b'"president"' 0.008
+
+Topic 8
+   b'"pm"' 0.013
+   b'"15"' 0.012
+   b'"steve"' 0.011
+   b'"12"' 0.010
+   b'"11"' 0.009
+   b'"buscemi"' 0.007
+   b'"trump"' 0.007
+   b'"omar"' 0.007
+   b'"im"' 0.006
+   b'"white"' 0.006
+
+Topic 9
+   b'"trump"' 0.044
+   b'"donald"' 0.008
+   b'"president"' 0.007
+   b'"george"' 0.007
+   b'"2016"' 0.005
+   b'"hillary"' 0.005
+   b'"can"' 0.005
+   b'"clinton"' 0.004
+   b'"com"' 0.004
+   b'"new"' 0.004

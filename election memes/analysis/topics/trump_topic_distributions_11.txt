@@ -1,0 +1,131 @@
+Topic 0
+   b'"trump"' 0.050
+   b'"pm"' 0.031
+   b'"donald"' 0.022
+   b'"2016"' 0.015
+   b'"10"' 0.014
+   b'"likes"' 0.014
+   b'"16"' 0.014
+   b'"hillary"' 0.013
+   b'"12"' 0.013
+   b'"retweets"' 0.013
+
+Topic 1
+   b'"trump"' 0.017
+   b'"donald"' 0.008
+   b'"re"' 0.007
+   b'"com"' 0.006
+   b'"puppet"' 0.006
+   b'"sent"' 0.004
+   b'"reddit"' 0.004
+   b'"deport"' 0.004
+   b'"jail"' 0.004
+   b'"america"' 0.004
+
+Topic 2
+   b'"16"' 0.033
+   b'"anonymous"' 0.027
+   b'"id"' 0.019
+   b'"trump"' 0.012
+   b'"kb"' 0.011
+   b'"10"' 0.011
+   b'"george"' 0.010
+   b'"file"' 0.009
+   b'"09"' 0.008
+   b'"05"' 0.008
+
+Topic 3
+   b'"trump"' 0.044
+   b'"donald"' 0.016
+   b'"fuck"' 0.009
+   b'"de"' 0.008
+   b'"room"' 0.008
+   b'"melania"' 0.007
+   b'"locker"' 0.006
+   b'"just"' 0.005
+   b'"2018"' 0.004
+   b'"talk"' 0.004
+
+Topic 4
+   b'"trump"' 0.083
+   b'"hillary"' 0.019
+   b'"clinton"' 0.018
+   b'"donald"' 0.017
+   b'"news"' 0.011
+   b'"debate"' 0.009
+   b'"will"' 0.009
+   b'"2016"' 0.009
+   b'"live"' 0.008
+   b'"cnn"' 0.007
+
+Topic 5
+   b'"trump"' 0.082
+   b'"donald"' 0.020
+   b'"america"' 0.015
+   b'"women"' 0.011
+   b'"can"' 0.009
+   b'"hillary"' 0.009
+   b'"president"' 0.008
+   b'"great"' 0.008
+   b'"make"' 0.008
+   b'"com"' 0.007
+
+Topic 6
+   b'"trump"' 0.014
+   b'"johnson"' 0.008
+   b'"vote"' 0.008
+   b'"hes"' 0.007
+   b'"masi"' 0.006
+   b'"popal"' 0.006
+   b'"votes"' 0.006
+   b'"jill"' 0.006
+   b'"donald"' 0.005
+   b'"stein"' 0.005
+
+Topic 7
+   b'"like"' 0.036
+   b'"trump"' 0.026
+   b'"donald"' 0.009
+   b'"people"' 0.008
+   b'"omar"' 0.006
+   b'"hate"' 0.006
+   b'"hrs"' 0.006
+   b'"just"' 0.006
+   b'"john"' 0.005
+   b'"tho"' 0.005
+
+Topic 8
+   b'"ago"' 0.037
+   b'"save"' 0.023
+   b'"hours"' 0.021
+   b'"points"' 0.014
+   b'"give"' 0.014
+   b'"report"' 0.013
+   b'"gold"' 0.012
+   b'"comments"' 0.011
+   b'"source"' 0.010
+   b'"permalink"' 0.010
+
+Topic 9
+   b'"trump"' 0.024
+   b'"like"' 0.021
+   b'"just"' 0.011
+   b'"people"' 0.010
+   b'"reply"' 0.009
+   b'"can"' 0.009
+   b'"don"' 0.008
+   b'"re"' 0.007
+   b'"get"' 0.007
+   b'"one"' 0.006
+
+Topic 7
+   "trump" 0.016
+   "like" 0.009
+   "white" 0.009
+   "just" 0.006
+   "frog" 0.005
+   "cuck" 0.004
+   "new" 0.004
+   "meme" 0.004
+   "somebody" 0.003
+   "pepe" 0.003

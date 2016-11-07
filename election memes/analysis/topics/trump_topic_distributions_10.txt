@@ -1,0 +1,119 @@
+Topic 0
+   b'"16"' 0.030
+   b'"anonymous"' 0.025
+   b'"id"' 0.018
+   b'"10"' 0.012
+   b'"15"' 0.012
+   b'"kb"' 0.010
+   b'"file"' 0.009
+   b'"05"' 0.008
+   b'"12"' 0.007
+   b'"09"' 0.007
+
+Topic 1
+   b'"debate"' 0.016
+   b'"trump"' 0.015
+   b'"news"' 0.014
+   b'"cnn"' 0.012
+   b'"breaking"' 0.011
+   b'"clinton"' 0.010
+   b'"et"' 0.008
+   b'"live"' 0.007
+   b'"omar"' 0.007
+   b'"begins"' 0.007
+
+Topic 2
+   b'"trump"' 0.040
+   b'"says"' 0.011
+   b'"president"' 0.009
+   b'"hillary"' 0.008
+   b'"donald"' 0.008
+   b'"teacher"' 0.007
+   b'"2016"' 0.006
+   b'"america"' 0.006
+   b'"clinton"' 0.005
+   b'"great"' 0.005
+
+Topic 3
+   b'"like"' 0.050
+   b'"trump"' 0.033
+   b'"reply"' 0.018
+   b'"hillary"' 0.014
+   b'"people"' 0.012
+   b'"hrs"' 0.012
+   b'"comment"' 0.011
+   b'"donald"' 0.009
+   b'"share"' 0.008
+   b'"mins"' 0.007
+
+Topic 4
+   b'"trump"' 0.091
+   b'"donald"' 0.033
+   b'"pm"' 0.027
+   b'"hillary"' 0.018
+   b'"2016"' 0.013
+   b'"16"' 0.011
+   b'"retweets"' 0.011
+   b'"clinton"' 0.010
+   b'"10"' 0.010
+   b'"likes"' 0.010
+
+Topic 5
+   b'"trump"' 0.069
+   b'"women"' 0.026
+   b'"donald"' 0.018
+   b'"know"' 0.009
+   b'"pussy"' 0.008
+   b'"com"' 0.007
+   b'"can"' 0.006
+   b'"fuck"' 0.006
+   b'"grab"' 0.006
+   b'"said"' 0.005
+
+Topic 6
+   b'"trump"' 0.027
+   b'"like"' 0.011
+   b'"just"' 0.010
+   b'"can"' 0.010
+   b'"will"' 0.008
+   b'"don"' 0.008
+   b'"get"' 0.008
+   b'"re"' 0.008
+   b'"people"' 0.007
+   b'"know"' 0.007
+
+Topic 7
+   b'"trump"' 0.059
+   b'"clinton"' 0.019
+   b'"hillary"' 0.018
+   b'"donald"' 0.012
+   b'"election"' 0.008
+   b'"news"' 0.007
+   b'"democrats"' 0.007
+   b'"2016"' 0.007
+   b'"president"' 0.007
+   b'"vote"' 0.007
+
+Topic 8
+   b'"ago"' 0.031
+   b'"trump"' 0.017
+   b'"hours"' 0.014
+   b'"save"' 0.013
+   b'"reply"' 0.012
+   b'"like"' 0.011
+   b'"comments"' 0.010
+   b'"report"' 0.009
+   b'"donald"' 0.009
+   b'"give"' 0.008
+
+Topic 9
+   b'"trump"' 0.043
+   b'"donald"' 0.009
+   b'"taxes"' 0.008
+   b'"2016"' 0.007
+   b'"bush"' 0.007
+   b'"george"' 0.006
+   b'"black"' 0.006
+   b'"white"' 0.005
+   b'"thing"' 0.005
+   b'"new"' 0.005

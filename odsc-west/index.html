@@ -30,8 +30,8 @@
         <!-- Title -->
         <section>
           <h1 class="my-title num-title" id="title-6-viz">5</h1>
-          <h1 class="my-title">Visualizations</h1>
-          <p>that will help you build better predictive models</p>
+          <h1 id="cover-title" class="my-title">Visualizations</h1>
+          <p id="help-you">that will help you build better predictive models</p>
           <div id="odsc-pic" class="sl-block" data-block-type="image" data-block-id="bcd0e8cb31b72285ea9e8b019c068ad5" style="min-width: 30px; min-height: 30px; width: 257.143px; height: 63px; left: 352px; top: 567px;">
             <div class="sl-block-content" style="z-index: 14;"><img data-natural-width="600" data-natural-height="147" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/511359/images/2629977/ODSC_logo_blue_no_gradient_cs6.png"></div>
           </div>
@@ -80,8 +80,7 @@
             </ul>
           </section>
           <section>
-            <p class="my-header">Disclosure</p>
-            <p>Already gave similar talk at ODSC Boston</p>
+            <p class="my-header">Disclaimer</p>
           </section>
         </section>
 
@@ -89,28 +88,32 @@
         <section>
           <section>
             <p class="my-header">A prediction problem</p>
-            <p class="my-header-2"><strong>Predicting likes on election memes</strong></p>
+            <p class="my-header-2"><strong>Predicting election meme popularity</strong></p>
+          </section>
+          <section id="meme-economy-section">
+            <img class="meme-economy" src="memes/meme-economy1.png">
+            <img class="meme-economy" src="memes/meme-economy2.png">
+            <img class="meme-economy" src="memes/meme-economy3.png">
+            <img class="meme-economy" src="memes/meme-economy4.png">
+            <img class="meme-economy" src="memes/meme-economy5.png">
+            <img class="meme-economy" src="memes/meme-economy6.png">
           </section>
           <section>
-            <p>Tons of memes popping up</p>
-            <p>Cite kaggle</p>
-            <p>meme economy screenshot</p>
-          </section>
-          <section>
-            <p>What is a meme?</p>
+            <p class="my-header">What is a meme?</p>
             <ul>
-              <li>A</li>
-              <li>B</li>
-              <li>C</li>
+              <li>"An idea, behavior, or style that spreads from person to person within a culture"</li>
+              <li>Typically a reusable picture captioned in culturally relevant ways</li>
+              <li>Primary mode of communication among millennials</li>
+              <li>Complicit in creating a gross monoculture of human expression</li>
             </ul>
+            <br>
+            <div class="row">
+              <div class="col-md-6"><img id="big-data" src="memes/big-data.png"></div>
+              <div class="col-md-6"><img id="break-statement" src="memes/break-statement.png"></div>
+            </div>
           </section>
           <section>
-            <p>Examples of memes</p>
-            <ul>
-              <li>A</li>
-              <li>B</li>
-              <li>C</li>
-            </ul>
+            <img id="tom-cruise" src="memes/looks-like-tom.jpg">
           </section>
         </section>
 
@@ -118,7 +121,7 @@
         <section>
           <section>
             <p class="my-header">The Data</p>
-            <p>13.k Donald Trump and Hillary Clinton memes</p>
+            <p>14.3k Donald Trump and Hillary Clinton memes</p>
             <ul>
               <li>Likes - not normalized :(</li>
               <li>Author (AdviceAnimals, No Chill, dankmemes, dankchristianmemes)</li>
@@ -129,15 +132,15 @@
               <li>Derived features (Hillary topics, Trump topics, seasonality features)</li>
             </ul>
           </section>
-          <section>
-            <p>example of a meme transformed to a row in the data</p>
-          </section>
         </section>
 
         <!-- 1-3 histogram, distribution vs. histogram, predicted vs. actual -->
         <section>
           <section>
             <h1 class="my-title num-title" id="title-1-hist">1</h1>
+          </section>
+          <section>
+            <h1 class="my-title">Data exploration</h1>
           </section>
           <section class="scrollable chart">
             <h4 id="like-histogram-title">Distribution of likes</h4>
@@ -147,22 +150,213 @@
             <h4>Distribution of likes across time</h4>
             <div id="target-histogram"></div>
           </section>
+          <section>
+            <p class="my-header">Topics</p>
+          </section>
+          <section>
+            <img id="melania-michelle" src="memes/melania-michelle.png">
+          </section>
+          <section id="topic-section">
+            <div class="row">
+            <!-- TRUMP -->
+              <div class="col-md-2">
+                <p class="trump-topic">Topic 1</p>
+                <ul>
+                     <li>donald</li>
+                     <li>just</li>
+                     <li>room</li>
+                     <li>melania</li>
+                     <li>locker</li>
+                     <li>2018</li>
+                     <li>talk</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <p class="trump-topic">Topic 2</p>
+                <ul>
+                     <li>donald</li>
+                     <li>puppet</li>
+                     <li>sent</li>
+                     <li>reddit</li>
+                     <li>deport</li>
+                     <li>jail</li>
+                     <li>america</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <p class="trump-topic">Topic 3</p>
+                <ul>
+                     <li>hillary</li>
+                     <li>clinton</li>
+                     <li>donald</li>
+                     <li>news</li>
+                     <li>debate</li>
+                     <li>live</li>
+                     <li>cnn</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <p class="trump-topic">Topic 4</p>
+                <ul>
+                     <li>trump</li>
+                     <li>johnson</li>
+                     <li>vote</li>
+                     <li>jill</li>
+                     <li>donald</li>
+                     <li>stein</li>
+                     <li>george</li>
+                     <li>bush</li>
+                     <li>taxes</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <p class="trump-topic">Topic 5</p>
+                <ul>
+                     <li>ago</li>
+                     <li>save</li>
+                     <li>hours</li>
+                     <li>points</li>
+                     <li>give</li>
+                     <li>report</li>
+                     <li>gold</li>
+                     <li>comments</li>
+                     <li>source</li>
+                     <li>permalink</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <p class="trump-topic">Topic 6</p>
+                <ul>
+                     <li>like</li>
+                     <li>white</li>
+                     <li>just</li>
+                     <li>frog</li>
+                     <li>cuck</li>
+                     <li>new</li>
+                     <li>meme</li>
+                     <li>somebody</li>
+                     <li>pepe</li>
+                </ul>
+              </div>
+            </div>
+            <!-- HILLARY -->
+            <div class="row">
+              <div class="col-md-2">
+                <p class="hillary-topic">Topic 1</p>
+                <ul>
+                     <li>hillary</li>
+                     <li>clinton</li>
+                     <li>debate</li>
+                     <li>live</li>
+                     <li>news</li>
+                     <li>msnbc</li>
+                     <li>cnn</li>
+                     <li>breaking</li>
+                     <li>trump</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <p class="hillary-topic">Topic 2</p>
+                <ul>
+                     <li>hillary</li>
+                     <li>clinton</li>
+                     <li>news</li>
+                     <li>information</li>
+                     <li>bullshit</li>
+                     <li>lead</li>
+                     <li>arrest</li>
+                     <li>wikileaks</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <p class="hillary-topic">Topic 3</p>
+                <ul>
+                     <li>hillary</li>
+                     <li>trump</li>
+                     <li>clinton</li>
+                     <li>release</li>
+                     <li>emails</li>
+                     <li>campaign</li>
+                     <li>called</li>
+                     <li>deleted</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <p class="hillary-topic">Topic 4</p>
+                <ul>
+                     <li>trump</li>
+                     <li>hillary</li>
+                     <li>like</li>
+                     <li>clinton</li>
+                     <li>us</li>
+                     <li>go</li>
+                     <li>parents</li>
+                     <li>fighting</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <p class="hillary-topic">Topic 5</p>
+                <ul>
+                     <li>like</li>
+                     <li>reply</li>
+                     <li>ago</li>
+                     <li>save</li>
+                     <li>people</li>
+                     <li>hours</li>
+                     <li>share</li>
+                     <li>can</li>
+                </ul>
+              </div>
+              <div class="col-md-2">
+                <p class="hillary-topic">Topic 6</p>
+                <ul>
+                     <li>hillary</li>
+                     <li>clinton</li>
+                     <li>vote</li>
+                     <li>matter</li>
+                     <li>bernie</li>
+                     <li>issues</li>
+                     <li>compare</li>
+                     <li>people</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section>
+            <p class="my-header">Topic 9</p>
+          </section>
           <section class="chart">
             <h4>Topic 9</h4>
             <div id="topic-word-distribution"></div>
           </section>
           <section class="chart">
-            <p>Meme --> topic distribution</p>
+            <h4>One meme's topic distribution</h4>
+            <img id="wall-of-fame" src="memes/knock-walls.png">
+            <img id="trump-face" src="memes/trump-face.png">
+            <img id="hillary-face" src="memes/hillary-face.png">
+            <div id="meme-topic-distribution"></div>
           </section>
           <section class="chart">
-            <h4>Distribution of likes across topic 9</h4>
+            <h4>Topic 4</h4>
+            <div id="overcomb">
+              <img src="memes/overcomb.png">
+            </div>
+            <div id="topic-word-distribution-4"></div>
+          </section>
+           <section>
+            <h1 class="my-title num-title" id="title-2-hist">2</h1>
+          </section>
+          <section>
+            <h1 class="my-title">Predicted vs. Actual</h1>
+          </section>
+          <section class="chart">
+            <h4>Distribution of likes across topic 4</h4>
             <div id="topic-histogram"></div>
             <div id="topics-section">
-
             </div>
           </section>
           <section>
-            <p>Bernie Sanders with a dank meme</p>
+            <img src="memes/bernie-sanders-dank-meme-stash.png">
           </section>
           <section>
             <p class="my-header">Buy this model because:</p>
@@ -172,11 +366,10 @@
             </ul>
           </section>
           <section>
-            <p>We want high-quality memes</p>
-            <p>Army revolt sticker or meme</p>
+            <img id="we-want-memes" src="memes/we-want-memes.jpg">
           </section>
           <section>
-            <p class="my-header">Histogram: recap</p>
+            <p class="my-header">Recap</p>
             <ul>
               <li>Data exploration</li>
               <li>Detecting outliers</li>
@@ -226,9 +419,12 @@
             <h1 class="my-title" id="pd-title">Partial dependence</h1>
             <p>Plots the <i>marginal effect</i> of a predictor on the prediction.</p>
           </section>
-          <section>
-            <p>"network" (source of meme)</p>
-            <p>Facebook, Instagram, Twitter, Imgur</p>
+          <section id="network-logos">
+            <p>Network</p>
+            <img class="logo" src="memes/fb-logo.png">
+            <img class="logo" src="memes/imgur-logo.png">
+            <img class="logo" src="memes/instagram-logo.png">
+            <img class="logo" src="memes/twitter-logo.png">
           </section>
           <section>
             <p>1. Fix network = Instagram</p>
@@ -255,14 +451,6 @@
           </section>
         </section>
 
-        <!-- Transition -->
-        <section>
-          <section class="chart">
-            <div id="tons-of-variables"></div>
-            <p>TODO: tons of variables animation</p>
-          </section>
-        </section>
-
         <!-- UNDERSTANDING: Variable importances -->
         <section>
           <section>
@@ -273,7 +461,7 @@
             <p>Rank-orders variables by their influence on the target.</p>
           </section>
           <section>
-            <p>Example: calculate variable importance for caption</p>
+            <p>Example: calculate permutation importance for <strong>caption</strong></p>
           </section>
           <section>
             <p>1. Shuffle caption column in validation data.</p>
@@ -285,10 +473,10 @@
           <section>
             <p>2. Predict on shuffled validation data.</p>
           </section>
-          <section class="chart">
+         <!--  <section class="chart">
             <h4>Prediction distribution</h4>
             <div id="var-imp2"></div>
-          </section>
+          </section> -->
           <section>
             <p>3. Calculate importances with new scores.</p>
             <p class="explanation">Importance(caption) = |Score(full_data) - Score(shuffled_data)|</p>
@@ -296,16 +484,6 @@
           <section class="chart">
             <h4>Importances</h4>
             <div id="var-imp3"></div>
-          </section>
-          <section>
-            <p>topic1 -- meme example</p>
-          </section>
-          <section>
-            <p>topic2 -- meme example</p>
-          </section>
-          <section>
-            <p>topic3 -- Jeb Bush example</p>
-            <p>Poor Jeb had a short, but fraught, journey</p>
           </section>
           <section>
             <p class="my-header">Variable importance: recap</p>
@@ -320,6 +498,7 @@
                 </ul>
               </li>
               <li>Compare variable rankings across models</li>
+              <li>Communicate results</li>
             </ul>
           </section>
         </section>
@@ -328,16 +507,6 @@
         <section>
           <section>
             <h1 class="my-title">Key takeaways</h1>
-          </section>
-          <section>
-            <p class="my-header">Most popular meme?</p>
-            <p>most popular meme</p>
-            <p>variables associated with it</p>
-          </section>
-          <section>
-            <p class="my-header">Least popular meme?</p>
-            <p>least popular meme</p>
-            <p>variables associated with it</p>
           </section>
           <section>
             <p class="my-header">How to create a successful meme?</p>
@@ -358,8 +527,8 @@
 
         <!-- Thank you -->
         <section>
-          <h1 class="my-title" id="thankyou">Thank you!</h1>
-          <p>goodbye meme</p>
+          <p>Thank you!</p>
+          <img id="please-clap" src="memes/please-clap.png">
         </section>
       </div>
 
@@ -404,15 +573,16 @@
       });
 
       Reveal.addEventListener('slidechanged', function(event) {
-         console.log('change:', event.previousSlide, event.currentSlide, event.indexh, event.indexv);
          if (event.indexh in fnMap && event.indexv > 0) fnMap[event.indexh]();
 
          // Histogram
          if (event.indexh === 5) {
-            if (event.indexv === 1) likeHistogram();
-            else if (event.indexv === 2) likeOverTime();
-            else if (event.indexv === 3) topic9();
-            else if (event.indexv === 5) likesOverTopic9();
+            if (event.indexv === 2) likeHistogram();
+            else if (event.indexv === 3) likeOverTime();
+            else if (event.indexv === 8) topic9();
+            else if (event.indexv === 9) memeTopicDistribution();
+            else if (event.indexv === 10) topic4();
+            else if (event.indexv === 13) likesOverTopic4();
          }
 
          // Lift
@@ -427,39 +597,39 @@
          }
 
          // 1000 variables
-         if (event.indexh === 8) {
-            $('#tons-of-variables').html('');
-            var n = 0;
-            var svg = d3.select('#tons-of-variables').append('svg').attr('height', 500).attr('width', 500);
-            var fdata = d3.range(1000);
-            var text = svg.append('text')
-              .attr('x', 70)
-              .attr('y', 250)
-              .attr('font-size', '60px')
-              .text('0 variables');
-            svg.selectAll('.f-data')
-              .data(fdata)
-              .enter()
-              .append('rect')
-              .attr('x', 0)
-              .attr('y', 0)
-              .attr('height', 0)
-              .attr('width', 0)
-              .transition()
-              .duration(2000)
-              .delay((d, i) => (i / 1000) * 2000)
-              .attr('x', 0)
-              .each('end', function(d, i) {
-                n += 1;
-                text.text(n + ' variables');
-              });
-         }
+         // if (event.indexh === 8) {
+         //    $('#tons-of-variables').html('');
+         //    var n = 0;
+         //    var svg = d3.select('#tons-of-variables').append('svg').attr('height', 500).attr('width', 1000);
+         //    var fdata = d3.range(5000);
+         //    var text = svg.append('text')
+         //      .attr('x', 280)
+         //      .attr('y', 250)
+         //      .attr('font-size', '200px')
+         //      .text('20');
+         //    svg.selectAll('.f-data')
+         //      .data(fdata)
+         //      .enter()
+         //      .append('rect')
+         //      .attr('x', 0)
+         //      .attr('y', 0)
+         //      .attr('height', 0)
+         //      .attr('width', 0)
+         //      .transition()
+         //      .duration(2000)
+         //      .delay((d, i) => (i / 1000) * 2000)
+         //      .attr('x', 0)
+         //      .each('end', function(d, i) {
+         //        n += 1;
+         //        text.text(n);
+         //      });
+         // }
 
          // Var imp
-         if (event.indexh == 9) {
+         if (event.indexh == 8) {
             if (event.indexv === 2) shuffleMatrix();
-            else if (event.indexv === 5) showDistributions();
-            else if (event.indexv === 8) showVarImp();
+            // else if (event.indexv === 5) showDistributions();
+            else if (event.indexv === 7) showVarImp();
          }
       });
 

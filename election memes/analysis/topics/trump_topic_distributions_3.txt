@@ -1,0 +1,119 @@
+Topic 0
+   "trump" 0.091
+   "donald" 0.019
+   "2016" 0.013
+   "pm" 0.012
+   "news" 0.012
+   "clinton" 0.011
+   "debate" 0.009
+   "cnn" 0.008
+   "live" 0.007
+   "america" 0.007
+
+Topic 1
+   "trump" 0.071
+   "donald" 0.022
+   "hillary" 0.021
+   "women" 0.009
+   "fuck" 0.008
+   "will" 0.007
+   "like" 0.006
+   "isis" 0.005
+   "make" 0.005
+   "running" 0.005
+
+Topic 2
+   "trump" 0.015
+   "says" 0.013
+   "teacher" 0.009
+   "obama" 0.009
+   "china" 0.008
+   "wrong" 0.007
+   "time" 0.006
+   "donald" 0.006
+   "said" 0.006
+   "america" 0.006
+
+Topic 3
+   "like" 0.032
+   "reply" 0.020
+   "ago" 0.015
+   "trump" 0.012
+   "know" 0.010
+   "don" 0.009
+   "people" 0.009
+   "just" 0.009
+   "comments" 0.007
+   "comment" 0.007
+
+Topic 4
+   "16" 0.034
+   "anonymous" 0.021
+   "10" 0.018
+   "pm" 0.018
+   "id" 0.015
+   "15" 0.012
+   "12" 0.010
+   "11" 0.010
+   "kb" 0.009
+   "05" 0.007
+
+Topic 5
+   "trump" 0.025
+   "donald" 0.008
+   "de" 0.006
+   "looks" 0.005
+   "eyes" 0.004
+   "nobody" 0.004
+   "elected" 0.004
+   "without" 0.004
+   "canada" 0.004
+   "cause" 0.004
+
+Topic 6
+   "trump" 0.039
+   "hillary" 0.012
+   "will" 0.009
+   "can" 0.009
+   "people" 0.008
+   "clinton" 0.008
+   "vote" 0.007
+   "donald" 0.006
+   "just" 0.006
+   "one" 0.005
+
+Topic 7
+   "trump" 0.016
+   "like" 0.009
+   "white" 0.009
+   "just" 0.006
+   "frog" 0.005
+   "cuck" 0.004
+   "new" 0.004
+   "meme" 0.004
+   "somebody" 0.003
+   "pepe" 0.003
+
+Topic 8
+   "trump" 0.030
+   "like" 0.022
+   "us" 0.010
+   "two" 0.007
+   "hillary" 0.007
+   "taxes" 0.006
+   "live" 0.006
+   "wanna" 0.006
+   "parents" 0.006
+   "go" 0.006
+
+Topic 9
+   "trump" 0.061
+   "hillary" 0.015
+   "donald" 0.015
+   "clinton" 0.010
+   "president" 0.009
+   "bush" 0.008
+   "vote" 0.008
+   "thing" 0.008
+   "putin" 0.007
+   "george" 0.006

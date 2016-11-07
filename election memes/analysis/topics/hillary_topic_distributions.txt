@@ -1,0 +1,119 @@
+Topic 0
+   "hillary" 0.032
+   "s" 0.022
+   "t" 0.018
+   "trump" 0.015
+   "clinton" 0.009
+   "re" 0.008
+   "don" 0.008
+   "just" 0.006
+   "can" 0.006
+   "vote" 0.006
+
+Topic 1
+   "hillary" 0.031
+   "s" 0.008
+   "clinton" 0.006
+   "hop" 0.005
+   "just" 0.004
+   "get" 0.004
+   "trump" 0.004
+   "take" 0.004
+   "t" 0.004
+   "fucking" 0.003
+
+Topic 2
+   "hillary" 0.053
+   "clinton" 0.037
+   "trump" 0.031
+   "donald" 0.018
+   "pm" 0.013
+   "2016" 0.010
+   "j" 0.008
+   "s" 0.008
+   "9" 0.008
+   "retweets" 0.008
+
+Topic 3
+   "hillary" 0.025
+   "s" 0.024
+   "clinton" 0.016
+   "trump" 0.015
+   "will" 0.010
+   "people" 0.007
+   "taxes" 0.006
+   "information" 0.006
+   "state" 0.006
+   "lead" 0.005
+
+Topic 4
+   "like" 0.050
+   "reply" 0.025
+   "hillary" 0.018
+   "hrs" 0.014
+   "clinton" 0.013
+   "comment" 0.012
+   "share" 0.012
+   "1" 0.010
+   "mins" 0.010
+   "just" 0.009
+
+Topic 5
+   "hillary" 0.029
+   "s" 0.016
+   "t" 0.016
+   "trump" 0.011
+   "can" 0.009
+   "like" 0.008
+   "bernie" 0.008
+   "just" 0.007
+   "m" 0.007
+   "clinton" 0.007
+
+Topic 6
+   "hillary" 0.050
+   "trump" 0.036
+   "clinton" 0.028
+   "donald" 0.014
+   "says" 0.010
+   "2" 0.008
+   "3" 0.007
+   "2016" 0.007
+   "cons" 0.006
+   "pros" 0.006
+
+Topic 7
+   "ago" 0.032
+   "hours" 0.017
+   "save" 0.017
+   "comments" 0.011
+   "report" 0.011
+   "reply" 0.011
+   "points" 0.011
+   "1" 0.010
+   "minutes" 0.010
+   "give" 0.008
+
+Topic 8
+   "16" 0.024
+   "anonymous" 0.021
+   "id" 0.016
+   "10" 0.011
+   "hillary" 0.010
+   "kb" 0.010
+   "09" 0.008
+   "file" 0.007
+   "clinton" 0.007
+   "youtube" 0.006
+
+Topic 9
+   "clinton" 0.044
+   "hillary" 0.036
+   "trump" 0.020
+   "news" 0.016
+   "debate" 0.014
+   "s" 0.014
+   "bill" 0.013
+   "cnn" 0.013
+   "000" 0.011
+   "com" 0.009

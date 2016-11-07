@@ -1,1 +1,1 @@
-var FEATURES = ["author", "caption", "day_of_week", "hour", "month", "network", "topic0", "topic1", "topic2", "topic3", "topic4", "topic5", "topic6", "topic7", "topic8", "topic9", "topic10", "topic11", "topic12", "topic13", "topic14", "topic15", "topic16", "topic17", "topic18", "topic19"];
+var FEATURES = ["author", "day_of_week", "hour", "month", "caption", "network", "topic0", "topic1", "topic2", "topic3", "topic4", "topic5", "topic6", "topic7", "topic8", "topic9", "topic10", "topic11", "topic12", "topic13", "topic14", "topic15", "topic16", "topic17", "topic18", "topic19"];

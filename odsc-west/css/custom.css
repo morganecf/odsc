@@ -20,7 +20,7 @@
 }
 .my-header-2 {
   font-size: 60px !important;
-  color: #D64541;
+  color: #e4002b;
   font-weight: 800;
 }
 
@@ -29,24 +29,30 @@
   font-family: Georgia !important;
 }
 
+#cover-title {
+  margin-left:500px;
+}
+#help-you {
+  margin-left:360px;
+}
 .num-title {
   font-size: 1000px !important;
   position: absolute !important;
-  color: #D64541 !important;
-  opacity: 0.4;
+  color: #e4002b !important;
+  opacity: 1;
 }
 #title-6-viz {
-  margin-top: -260px;
+  margin-top: -330px;
 }
 #title-1-hist {
-  margin-top: -280px;
+  margin-top: -330px;
 }
 #histogram-title {
   margin-top: 100px;
   margin-left: 150px;
 }
 #title-2-hist {
-  margin-top: -300px;
+  margin-top: -330px;
 }
 #histogram-2-title {
   text-align: right;
@@ -55,15 +61,16 @@
   text-align: right;
 }
 #title-4-lift {
-  margin-top: -300px;
-  margin-left: -150px;
+  margin-top: -330px;
+  margin-left: -100px;
 }
 #lift-title {
   margin-top: 330px;
   margin-left: 350px;
 }
 #title-5-pd {
-  margin-top: -280px;
+  margin-top: -330px;
+  margin-left: -100px;
 }
 #pd-title {
   margin-top: -40px;
@@ -71,7 +78,7 @@
   text-align: right;
 }
 #title-6-varimp {
-  margin-top: -280px;
+  margin-top: -330px;
 }
 #varimp-title {
   text-align: right;
@@ -91,13 +98,59 @@
   margin-left: 680px;
 }
 #ugly-plot {
-  margin-lefT: 140px;
+  margin-left: 280px;
 }
 
 .reveal section img {
   border: 0px solid black !important;
 }
 
+/* images */
+#wall-of-fame {
+  position: absolute;
+  margin-left: -500px;
+  margin-top: 85px;
+  width: 600px;
+}
+#trump-face {
+  border-radius: 100%;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin-left: 250px;
+  margin-top: 385px;
+}
+#hillary-face {
+  border-radius: 100%;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin-left: 250px;
+  margin-top: 90px;
+}
+#melania-michelle {
+  width: 660px;
+}
+
+#network-logos .logo {
+  width: 200px;
+  height: 200px;
+}
+#please-clap {
+  width:800px;
+}
+#we-want-memes {
+  width: 600px;
+}
+#big-data {
+  width:400px;
+}
+#last-night {
+  width:350px;
+}
+#break-statement {
+  width:500px;
+}
 /* Histograms - BE view */
 
 /*#bird-eye-histogram {
@@ -135,6 +188,19 @@
   stroke-width: 1;
 }
 */
+
+/* List of topics */
+#topic-section {
+  font-size: 20px;
+}
+#topic-section .trump-topic {
+  font-weight: 600;
+  color: #e4002b;
+}
+#topic-section .hillary-topic {
+  font-weight: 600;
+  color: #0057b8;
+}
 
 /* Histogram */
 #like-histogram .axis path, #like-histogram .axis line {
@@ -216,7 +282,7 @@
   fill: #0057b8;
 }
 #topic-histogram .pred-point {
-  fill: #2D8FE2;
+  fill: #0057b8;
   stroke: #fff;
   stroke-width: 2;
 }
@@ -233,13 +299,59 @@
 #topic-histogram .pred-path {
   fill: none;
   stroke-width: 2;
-  stroke: #2D8FE2;
+  stroke: #0057b8;
 }
 #topic-histogram .bar {
   fill: #D64541;
 }
 #topic-histogram .axis-label {
   font-size: 14px;
+}
+
+/* Topic 9 */
+#topic-word-distribution .axis path, #topic-word-distribution .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#topic-word-distribution .axis .tick text {
+  font-size: 12px;
+}
+#topic-word-distribution .topic-word {
+  font-size: 20px;
+}
+#topic-word-distribution .topic-word-bk {
+  fill: #DADFE1;
+}
+#topic-word-distribution .topic-word-prob {
+  fill: #e4002b;
+}
+#topic-word-distribution {
+  position: absolute;
+}
+#overcomb {
+  position: absolute;
+  float:right;
+  margin-left:1000px;
+}
+
+/* Topic 4 */
+#topic-word-distribution-4 .axis path, #topic-word-distribution-4 .axis line {
+  fill: none;
+  stroke: #1C2739;
+  shape-rendering: crispEdges;
+}
+#topic-word-distribution-4 .axis .tick text {
+  font-size: 12px;
+}
+#topic-word-distribution-4 .topic-word {
+  font-size: 20px;
+}
+#topic-word-distribution-4 .topic-word-bk {
+  fill: #DADFE1;
+}
+#topic-word-distribution-4 .topic-word-prob {
+  fill: #e4002b;
 }
 
 /* Histogram */
@@ -344,23 +456,19 @@
 }
 #lift .act-bottom25-line {
   fill: none;
-  stroke: #e4002b;
+  stroke: #1C2739;
 }
 #lift .top10-fill-line {
   fill: #e4002b;
-  opacity: 0.3;
 }
 #lift .bottom10-fill-line {
   fill: #e4002b;
-  opacity: 0.3;
 }
 #lift .top25-fill-line {
   fill: #1C2739;
-  opacity: 0.3;
 }
 #lift .bottom25-fill-line {
   fill: #1C2739;
-  opacity: 0.3;
 }
 
 #lift .act-point-top10 {
@@ -384,6 +492,10 @@
   stroke: #fff;
 }
 
+#meme-economy-section .meme-economy {
+  margin-top: -50px;
+}
+
 #bin-select {
   font-size: 18px;
   margin-top: -30px;
@@ -401,30 +513,30 @@
 }
 
 #var-imp2 .legend-old {
-  fill: #E87E04;
+  fill: #0057b8;
 }
 #var-imp2 .legend-new {
-  fill: #3FC380;
+  fill: #e4002b;
 }
 #var-imp2 .legend-text {
   font-size: 12px;
 }
 
 #diagonalHatch-OG path {
-  stroke: #E87E04;
+  stroke: #0057b8;
 }
 #diagonalHatch-new path {
-  stroke: #3FC380;
+  stroke: #e4002b;
 }
 
 #original-prediction {
   fill: url(#diagonalHatch-OG);
-  stroke: #E87E04;
+  stroke: #0057b8;
   stroke-width: 2;
 }
 #new-prediction {
   fill: url(#diagonalHatch-new);
-  stroke: #3FC380;
+  stroke: #e4002b;
   stroke-width: 2;
 }
 
@@ -449,6 +561,8 @@
 }
 #var-imp3 .importance-label {
   font-size: 12px;
+  stroke: none;
+  fill: #fff;
 }
 
 /* Partial dependence */
